@@ -98,7 +98,7 @@ firmwareVersion    :最新固件版本号
                              firmwareType:(UInt8)firmwareType
                           firmwareVersion:(NSString *)version
                                   timeout:(CGFloat)timeout
-                               completion:(SLPTransforCompletion)handle;
+                               callback:(SLPTransforCallback)handle;
 
 
 @end

@@ -6,14 +6,13 @@
 //  Copyright © 2020 Martin. All rights reserved.
 //
 
-#import <EW202W/EW202W.h>
+#import "SLPLTcpManager.h"
 #import "EW202WDeviceInfo.h"
 #import "EW202WWorkState.h"
 #import "EW202WAlarmInfo.h"
 #import "EW202WClockDormancyBean.h"
 #import "EW202WAidInfo.h"
 #import "EW202WSystemInfo.h"
-#import <SLPCommon/SLPCommon.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

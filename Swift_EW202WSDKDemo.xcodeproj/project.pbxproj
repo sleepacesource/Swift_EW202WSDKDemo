@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2640EF9F249B522700947B20 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640EF93249B522700947B20 /* ControlViewController.swift */; };
+		2640EFA0249B522700947B20 /* SleepAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640EF94249B522700947B20 /* SleepAidViewController.swift */; };
+		2640EFA1249B522700947B20 /* LightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2640EF95249B522700947B20 /* LightViewController.xib */; };
+		2640EFA4249B522700947B20 /* LightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640EF9C249B522700947B20 /* LightViewController.swift */; };
+		2640EFA5249B522700947B20 /* ControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2640EF9D249B522700947B20 /* ControlViewController.xib */; };
+		2640EFA6249B522700947B20 /* SleepAidViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2640EF9E249B522700947B20 /* SleepAidViewController.xib */; };
+		2640EFB3249B528000947B20 /* CustomStyleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2640EFAF249B527F00947B20 /* CustomStyleButton.m */; };
+		2640EFB4249B528000947B20 /* CustomColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2640EFB2249B527F00947B20 /* CustomColorButton.m */; };
+		2640EFB9249B53DB00947B20 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2640EFB8249B53DB00947B20 /* DataManager.m */; };
 		26872C3A249B1286002FFD15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C39249B1286002FFD15 /* AppDelegate.swift */; };
 		26872C3E249B1286002FFD15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C3D249B1286002FFD15 /* ViewController.swift */; };
 		26872C41249B1286002FFD15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26872C3F249B1286002FFD15 /* Main.storyboard */; };
@@ -15,8 +24,6 @@
 		26872C4F249B1445002FFD15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C4D249B1445002FFD15 /* MainViewController.swift */; };
 		26872C50249B1445002FFD15 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C4E249B1445002FFD15 /* MainViewController.xib */; };
 		26872C75249B14DD002FFD15 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26872C74249B14DD002FFD15 /* libc++.tbd */; };
-		26872C7C249B18F2002FFD15 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C7A249B18F2002FFD15 /* ControlViewController.swift */; };
-		26872C7D249B18F2002FFD15 /* ControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C7B249B18F2002FFD15 /* ControlViewController.xib */; };
 		26872C80249B1902002FFD15 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C7E249B1902002FFD15 /* SettingViewController.swift */; };
 		26872C81249B1902002FFD15 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C7F249B1902002FFD15 /* SettingViewController.xib */; };
 		26872C84249B19A7002FFD15 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C82249B19A7002FFD15 /* LoginViewController.xib */; };
@@ -27,6 +34,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2640EF93249B522700947B20 /* ControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
+		2640EF94249B522700947B20 /* SleepAidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepAidViewController.swift; sourceTree = "<group>"; };
+		2640EF95249B522700947B20 /* LightViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightViewController.xib; sourceTree = "<group>"; };
+		2640EF9C249B522700947B20 /* LightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightViewController.swift; sourceTree = "<group>"; };
+		2640EF9D249B522700947B20 /* ControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControlViewController.xib; sourceTree = "<group>"; };
+		2640EF9E249B522700947B20 /* SleepAidViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SleepAidViewController.xib; sourceTree = "<group>"; };
+		2640EFAF249B527F00947B20 /* CustomStyleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomStyleButton.m; sourceTree = "<group>"; };
+		2640EFB0249B527F00947B20 /* CustomColorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomColorButton.h; sourceTree = "<group>"; };
+		2640EFB1249B527F00947B20 /* CustomStyleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomStyleButton.h; sourceTree = "<group>"; };
+		2640EFB2249B527F00947B20 /* CustomColorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomColorButton.m; sourceTree = "<group>"; };
+		2640EFB5249B52B000947B20 /* Swift_EW202WSDKDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift_EW202WSDKDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2640EFB7249B53DB00947B20 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		2640EFB8249B53DB00947B20 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		26872C36249B1286002FFD15 /* Swift_EW202WSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_EW202WSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26872C39249B1286002FFD15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26872C3D249B1286002FFD15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,8 +57,6 @@
 		26872C4D249B1445002FFD15 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		26872C4E249B1445002FFD15 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		26872C74249B14DD002FFD15 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		26872C7A249B18F2002FFD15 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
-		26872C7B249B18F2002FFD15 /* ControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlViewController.xib; sourceTree = "<group>"; };
 		26872C7E249B1902002FFD15 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		26872C7F249B1902002FFD15 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		26872C82249B19A7002FFD15 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../../../../LoginViewController.xib; sourceTree = "<group>"; };
@@ -65,6 +83,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2640EF92249B522700947B20 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				2640EFB6249B53DB00947B20 /* DataManager */,
+				2640EF93249B522700947B20 /* ControlViewController.swift */,
+				2640EF9D249B522700947B20 /* ControlViewController.xib */,
+				2640EF9C249B522700947B20 /* LightViewController.swift */,
+				2640EF95249B522700947B20 /* LightViewController.xib */,
+				2640EF94249B522700947B20 /* SleepAidViewController.swift */,
+				2640EF9E249B522700947B20 /* SleepAidViewController.xib */,
+				2640EFAE249B527F00947B20 /* Button */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		2640EFAE249B527F00947B20 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				2640EFB5249B52B000947B20 /* Swift_EW202WSDKDemo-Bridging-Header.h */,
+				2640EFAF249B527F00947B20 /* CustomStyleButton.m */,
+				2640EFB0249B527F00947B20 /* CustomColorButton.h */,
+				2640EFB1249B527F00947B20 /* CustomStyleButton.h */,
+				2640EFB2249B527F00947B20 /* CustomColorButton.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		2640EFB6249B53DB00947B20 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				2640EFB7249B53DB00947B20 /* DataManager.h */,
+				2640EFB8249B53DB00947B20 /* DataManager.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
 		26872C2D249B1286002FFD15 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +148,7 @@
 				26872C4E249B1445002FFD15 /* MainViewController.xib */,
 				26872C83249B19A7002FFD15 /* LoginViewController.swift */,
 				26872C82249B19A7002FFD15 /* LoginViewController.xib */,
-				26872C7A249B18F2002FFD15 /* ControlViewController.swift */,
-				26872C7B249B18F2002FFD15 /* ControlViewController.xib */,
+				2640EF92249B522700947B20 /* Control */,
 				26872C7E249B1902002FFD15 /* SettingViewController.swift */,
 				26872C7F249B1902002FFD15 /* SettingViewController.xib */,
 				26872C3F249B1286002FFD15 /* Main.storyboard */,
@@ -183,12 +236,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26872C7D249B18F2002FFD15 /* ControlViewController.xib in Resources */,
 				26872C81249B1902002FFD15 /* SettingViewController.xib in Resources */,
 				26872C46249B1289002FFD15 /* LaunchScreen.storyboard in Resources */,
+				2640EFA5249B522700947B20 /* ControlViewController.xib in Resources */,
 				26872C43249B1289002FFD15 /* Assets.xcassets in Resources */,
 				26872C41249B1286002FFD15 /* Main.storyboard in Resources */,
+				2640EFA6249B522700947B20 /* SleepAidViewController.xib in Resources */,
 				26872C84249B19A7002FFD15 /* LoginViewController.xib in Resources */,
+				2640EFA1249B522700947B20 /* LightViewController.xib in Resources */,
 				26872C50249B1445002FFD15 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,12 +280,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2640EFB3249B528000947B20 /* CustomStyleButton.m in Sources */,
 				26872C85249B19A7002FFD15 /* LoginViewController.swift in Sources */,
+				2640EFB4249B528000947B20 /* CustomColorButton.m in Sources */,
 				26872C80249B1902002FFD15 /* SettingViewController.swift in Sources */,
 				26872C4F249B1445002FFD15 /* MainViewController.swift in Sources */,
+				2640EFA0249B522700947B20 /* SleepAidViewController.swift in Sources */,
 				26872C3E249B1286002FFD15 /* ViewController.swift in Sources */,
-				26872C7C249B18F2002FFD15 /* ControlViewController.swift in Sources */,
+				2640EF9F249B522700947B20 /* ControlViewController.swift in Sources */,
 				26872C3A249B1286002FFD15 /* AppDelegate.swift in Sources */,
+				2640EFB9249B53DB00947B20 /* DataManager.m in Sources */,
+				2640EFA4249B522700947B20 /* LightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.medicatech.Swift-EW202WSDKDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/san/Desktop/WorkProject/GitGubProject/Swift_EW202WSDkDemo/Swift_EW202WSDKDemo/Control/Button/Swift_EW202WSDKDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.medicatech.Swift-EW202WSDKDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/san/Desktop/WorkProject/GitGubProject/Swift_EW202WSDkDemo/Swift_EW202WSDKDemo/Control/Button/Swift_EW202WSDKDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

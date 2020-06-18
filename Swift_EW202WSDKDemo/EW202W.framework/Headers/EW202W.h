@@ -10,13 +10,13 @@
 #import <UIKit/UIKit.h>
 #import "SLPLTcpManager+EW202W.h"
 #import "SLPEW202WDef.h"
-
 #import "GCDAsyncSocket.h"
 #import "GCDAsyncUdpSocket.h"
 #import "SLPLTcp.h"
 #import "SLPTCPDelegate.h"
 #import "SLPLTcpManager.h"
 #import "SLPLTcpDef.h"
+#import "SLPLTcpUpgradeInfo.h"
 
 #define kEW202WVersion  @"1.0.0";
 

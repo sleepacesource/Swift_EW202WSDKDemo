@@ -46,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)alarmConfig:(SLPAlarmInfo *)alarmInfo deviceInfo:(NSString *)deviceName deviceType:(SLPDeviceTypes)deviceType  timeOut:(CGFloat)timeout completion:(void (^)(BOOL result,id responseObject, NSString *error))completion;
 
+
 @end
 
 NS_ASSUME_NONNULL_END
