@@ -13,6 +13,7 @@
 		26872C41249B1286002FFD15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26872C3F249B1286002FFD15 /* Main.storyboard */; };
 		26872C43249B1289002FFD15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26872C42249B1289002FFD15 /* Assets.xcassets */; };
 		26872C46249B1289002FFD15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26872C44249B1289002FFD15 /* LaunchScreen.storyboard */; };
+		B5F13E0E863AA1E9CDAA9DE2 /* libPods-Swift_EW202WSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C572E12EB3F329081656B3 /* libPods-Swift_EW202WSDKDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		26872C42249B1289002FFD15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26872C45249B1289002FFD15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26872C47249B1289002FFD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57C572E12EB3F329081656B3 /* libPods-Swift_EW202WSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swift_EW202WSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B8EDF83D3D4DC3699CC808 /* Pods-Swift_EW202WSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_EW202WSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-Swift_EW202WSDKDemo/Pods-Swift_EW202WSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EA3B6AAFCB6B916A77F61401 /* Pods-Swift_EW202WSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_EW202WSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-Swift_EW202WSDKDemo/Pods-Swift_EW202WSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F13E0E863AA1E9CDAA9DE2 /* libPods-Swift_EW202WSDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				26872C38249B1286002FFD15 /* Swift_EW202WSDKDemo */,
 				26872C37249B1286002FFD15 /* Products */,
+				2F73EB9F7DD4F359151BA0CD /* Pods */,
+				77C66DED3C1357EE6FF444E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = Swift_EW202WSDKDemo;
 			sourceTree = "<group>";
 		};
+		2F73EB9F7DD4F359151BA0CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9B8EDF83D3D4DC3699CC808 /* Pods-Swift_EW202WSDKDemo.debug.xcconfig */,
+				EA3B6AAFCB6B916A77F61401 /* Pods-Swift_EW202WSDKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77C66DED3C1357EE6FF444E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57C572E12EB3F329081656B3 /* libPods-Swift_EW202WSDKDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26872C4A249B1289002FFD15 /* Build configuration list for PBXNativeTarget "Swift_EW202WSDKDemo" */;
 			buildPhases = (
+				4DFEEB9DA5FF4B91F4C32457 /* [CP] Check Pods Manifest.lock */,
 				26872C32249B1286002FFD15 /* Sources */,
 				26872C33249B1286002FFD15 /* Frameworks */,
 				26872C34249B1286002FFD15 /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DFEEB9DA5FF4B91F4C32457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swift_EW202WSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26872C32249B1286002FFD15 /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		26872C4B249B1289002FFD15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B8EDF83D3D4DC3699CC808 /* Pods-Swift_EW202WSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +352,7 @@
 		};
 		26872C4C249B1289002FFD15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA3B6AAFCB6B916A77F61401 /* Pods-Swift_EW202WSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
