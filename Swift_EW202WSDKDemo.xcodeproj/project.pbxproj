@@ -16,6 +16,8 @@
 		2640EFB3249B528000947B20 /* CustomStyleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2640EFAF249B527F00947B20 /* CustomStyleButton.m */; };
 		2640EFB4249B528000947B20 /* CustomColorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2640EFB2249B527F00947B20 /* CustomColorButton.m */; };
 		2640EFB9249B53DB00947B20 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2640EFB8249B53DB00947B20 /* DataManager.m */; };
+		2640EFBC249B71D800947B20 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2640EFBA249B71D800947B20 /* SettingViewController.swift */; };
+		2640EFBD249B71D800947B20 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2640EFBB249B71D800947B20 /* SettingViewController.xib */; };
 		26872C3A249B1286002FFD15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C39249B1286002FFD15 /* AppDelegate.swift */; };
 		26872C3E249B1286002FFD15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C3D249B1286002FFD15 /* ViewController.swift */; };
 		26872C41249B1286002FFD15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26872C3F249B1286002FFD15 /* Main.storyboard */; };
@@ -24,8 +26,6 @@
 		26872C4F249B1445002FFD15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C4D249B1445002FFD15 /* MainViewController.swift */; };
 		26872C50249B1445002FFD15 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C4E249B1445002FFD15 /* MainViewController.xib */; };
 		26872C75249B14DD002FFD15 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26872C74249B14DD002FFD15 /* libc++.tbd */; };
-		26872C80249B1902002FFD15 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C7E249B1902002FFD15 /* SettingViewController.swift */; };
-		26872C81249B1902002FFD15 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C7F249B1902002FFD15 /* SettingViewController.xib */; };
 		26872C84249B19A7002FFD15 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C82249B19A7002FFD15 /* LoginViewController.xib */; };
 		26872C85249B19A7002FFD15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C83249B19A7002FFD15 /* LoginViewController.swift */; };
 		26872C88249B1A29002FFD15 /* EW202W.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26872C86249B1A29002FFD15 /* EW202W.framework */; };
@@ -47,6 +47,8 @@
 		2640EFB5249B52B000947B20 /* Swift_EW202WSDKDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift_EW202WSDKDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		2640EFB7249B53DB00947B20 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		2640EFB8249B53DB00947B20 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		2640EFBA249B71D800947B20 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2640EFBB249B71D800947B20 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		26872C36249B1286002FFD15 /* Swift_EW202WSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_EW202WSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26872C39249B1286002FFD15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26872C3D249B1286002FFD15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +59,6 @@
 		26872C4D249B1445002FFD15 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		26872C4E249B1445002FFD15 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		26872C74249B14DD002FFD15 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		26872C7E249B1902002FFD15 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		26872C7F249B1902002FFD15 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		26872C82249B19A7002FFD15 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../../../../LoginViewController.xib; sourceTree = "<group>"; };
 		26872C83249B19A7002FFD15 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../LoginViewController.swift; sourceTree = "<group>"; };
 		26872C86249B1A29002FFD15 /* EW202W.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EW202W.framework; sourceTree = "<group>"; };
@@ -149,9 +149,9 @@
 				26872C83249B19A7002FFD15 /* LoginViewController.swift */,
 				26872C82249B19A7002FFD15 /* LoginViewController.xib */,
 				2640EF92249B522700947B20 /* Control */,
-				26872C7E249B1902002FFD15 /* SettingViewController.swift */,
-				26872C7F249B1902002FFD15 /* SettingViewController.xib */,
 				26872C3F249B1286002FFD15 /* Main.storyboard */,
+				2640EFBA249B71D800947B20 /* SettingViewController.swift */,
+				2640EFBB249B71D800947B20 /* SettingViewController.xib */,
 				26872C42249B1289002FFD15 /* Assets.xcassets */,
 				26872C44249B1289002FFD15 /* LaunchScreen.storyboard */,
 				26872C47249B1289002FFD15 /* Info.plist */,
@@ -236,8 +236,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26872C81249B1902002FFD15 /* SettingViewController.xib in Resources */,
 				26872C46249B1289002FFD15 /* LaunchScreen.storyboard in Resources */,
+				2640EFBD249B71D800947B20 /* SettingViewController.xib in Resources */,
 				2640EFA5249B522700947B20 /* ControlViewController.xib in Resources */,
 				26872C43249B1289002FFD15 /* Assets.xcassets in Resources */,
 				26872C41249B1286002FFD15 /* Main.storyboard in Resources */,
@@ -281,9 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2640EFB3249B528000947B20 /* CustomStyleButton.m in Sources */,
+				2640EFBC249B71D800947B20 /* SettingViewController.swift in Sources */,
 				26872C85249B19A7002FFD15 /* LoginViewController.swift in Sources */,
 				2640EFB4249B528000947B20 /* CustomColorButton.m in Sources */,
-				26872C80249B1902002FFD15 /* SettingViewController.swift in Sources */,
 				26872C4F249B1445002FFD15 /* MainViewController.swift in Sources */,
 				2640EFA0249B522700947B20 /* SleepAidViewController.swift in Sources */,
 				26872C3E249B1286002FFD15 /* ViewController.swift in Sources */,

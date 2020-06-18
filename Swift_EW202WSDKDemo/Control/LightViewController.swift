@@ -63,7 +63,6 @@ class LightViewController: UIViewController {
         light.b = b ?? 0
         light.w = w ?? 0
         
-        
         SLPLTcpManager.sharedLTCP()?.ew202wLightControlOperation(1, brightness: br, lightMode: 0xff, light: light, deviceInfo: "EW22W20C00045", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed

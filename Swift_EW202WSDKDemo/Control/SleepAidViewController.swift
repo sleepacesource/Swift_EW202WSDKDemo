@@ -200,30 +200,30 @@ class SleepAidViewController: UIViewController {
         
         
         let aidInfo : SLPAidInfo = SLPAidInfo()
-//        aidInfo.musicFlag = self.playdBT.isSelected
+        aidInfo.musicFlag = UInt8(self.playdBT.isSelected ? 1 : 0)
         aidInfo.musicID =  UInt16(self.musicIDTextField.text!)!
         aidInfo.volume = vol
         aidInfo.r = r
-           aidInfo.g = g
-           aidInfo.b = b
-           aidInfo.w = w
-         aidInfo.brightness = br
+        aidInfo.g = g
+        aidInfo.b = b
+        aidInfo.w = w
+        aidInfo.brightness = br
         aidInfo.aidStopDuration = aidStopDuration
         
-      SLPLTcpManager.sharedLTCP()?.ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00045", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
-          
-         if status == SLPDataTransferStatus.succeed
-          {
-              print("config aid sleep succeed !")
-          }
-          else
-          {
-              print("config aid sleep failed !")
-          }
-          
-      })
-     
-
+        SLPLTcpManager.sharedLTCP()?.ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00045", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+            
+            if status == SLPDataTransferStatus.succeed
+            {
+                print("config aid sleep succeed !")
+            }
+            else
+            {
+                print("config aid sleep failed !")
+            }
+            
+        })
+        
+        
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
