@@ -8,23 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		26872C3A249B1286002FFD15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C39249B1286002FFD15 /* AppDelegate.swift */; };
-		26872C3C249B1286002FFD15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C3B249B1286002FFD15 /* SceneDelegate.swift */; };
 		26872C3E249B1286002FFD15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C3D249B1286002FFD15 /* ViewController.swift */; };
 		26872C41249B1286002FFD15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26872C3F249B1286002FFD15 /* Main.storyboard */; };
 		26872C43249B1289002FFD15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26872C42249B1289002FFD15 /* Assets.xcassets */; };
 		26872C46249B1289002FFD15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26872C44249B1289002FFD15 /* LaunchScreen.storyboard */; };
+		26872C4F249B1445002FFD15 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C4D249B1445002FFD15 /* MainViewController.swift */; };
+		26872C50249B1445002FFD15 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C4E249B1445002FFD15 /* MainViewController.xib */; };
+		26872C75249B14DD002FFD15 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26872C74249B14DD002FFD15 /* libc++.tbd */; };
+		26872C7C249B18F2002FFD15 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C7A249B18F2002FFD15 /* ControlViewController.swift */; };
+		26872C7D249B18F2002FFD15 /* ControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C7B249B18F2002FFD15 /* ControlViewController.xib */; };
+		26872C80249B1902002FFD15 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C7E249B1902002FFD15 /* SettingViewController.swift */; };
+		26872C81249B1902002FFD15 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C7F249B1902002FFD15 /* SettingViewController.xib */; };
+		26872C84249B19A7002FFD15 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C82249B19A7002FFD15 /* LoginViewController.xib */; };
+		26872C85249B19A7002FFD15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872C83249B19A7002FFD15 /* LoginViewController.swift */; };
+		26872C88249B1A29002FFD15 /* EW202W.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26872C86249B1A29002FFD15 /* EW202W.framework */; };
+		26872C89249B1A29002FFD15 /* SLPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26872C87249B1A29002FFD15 /* SLPCommon.framework */; };
 		B5F13E0E863AA1E9CDAA9DE2 /* libPods-Swift_EW202WSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C572E12EB3F329081656B3 /* libPods-Swift_EW202WSDKDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26872C36249B1286002FFD15 /* Swift_EW202WSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift_EW202WSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26872C39249B1286002FFD15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26872C3B249B1286002FFD15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		26872C3D249B1286002FFD15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		26872C40249B1286002FFD15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26872C42249B1289002FFD15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26872C45249B1289002FFD15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26872C47249B1289002FFD15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26872C4D249B1445002FFD15 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		26872C4E249B1445002FFD15 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		26872C74249B14DD002FFD15 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		26872C7A249B18F2002FFD15 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
+		26872C7B249B18F2002FFD15 /* ControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlViewController.xib; sourceTree = "<group>"; };
+		26872C7E249B1902002FFD15 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		26872C7F249B1902002FFD15 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		26872C82249B19A7002FFD15 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../../../../LoginViewController.xib; sourceTree = "<group>"; };
+		26872C83249B19A7002FFD15 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../../LoginViewController.swift; sourceTree = "<group>"; };
+		26872C86249B1A29002FFD15 /* EW202W.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EW202W.framework; sourceTree = "<group>"; };
+		26872C87249B1A29002FFD15 /* SLPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SLPCommon.framework; sourceTree = "<group>"; };
 		57C572E12EB3F329081656B3 /* libPods-Swift_EW202WSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swift_EW202WSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B8EDF83D3D4DC3699CC808 /* Pods-Swift_EW202WSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_EW202WSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-Swift_EW202WSDKDemo/Pods-Swift_EW202WSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3B6AAFCB6B916A77F61401 /* Pods-Swift_EW202WSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_EW202WSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-Swift_EW202WSDKDemo/Pods-Swift_EW202WSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -35,7 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26872C75249B14DD002FFD15 /* libc++.tbd in Frameworks */,
 				B5F13E0E863AA1E9CDAA9DE2 /* libPods-Swift_EW202WSDKDemo.a in Frameworks */,
+				26872C88249B1A29002FFD15 /* EW202W.framework in Frameworks */,
+				26872C89249B1A29002FFD15 /* SLPCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +86,18 @@
 		26872C38249B1286002FFD15 /* Swift_EW202WSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				26872C86249B1A29002FFD15 /* EW202W.framework */,
+				26872C87249B1A29002FFD15 /* SLPCommon.framework */,
 				26872C39249B1286002FFD15 /* AppDelegate.swift */,
-				26872C3B249B1286002FFD15 /* SceneDelegate.swift */,
 				26872C3D249B1286002FFD15 /* ViewController.swift */,
+				26872C4D249B1445002FFD15 /* MainViewController.swift */,
+				26872C4E249B1445002FFD15 /* MainViewController.xib */,
+				26872C83249B19A7002FFD15 /* LoginViewController.swift */,
+				26872C82249B19A7002FFD15 /* LoginViewController.xib */,
+				26872C7A249B18F2002FFD15 /* ControlViewController.swift */,
+				26872C7B249B18F2002FFD15 /* ControlViewController.xib */,
+				26872C7E249B1902002FFD15 /* SettingViewController.swift */,
+				26872C7F249B1902002FFD15 /* SettingViewController.xib */,
 				26872C3F249B1286002FFD15 /* Main.storyboard */,
 				26872C42249B1289002FFD15 /* Assets.xcassets */,
 				26872C44249B1289002FFD15 /* LaunchScreen.storyboard */,
@@ -80,13 +112,13 @@
 				B9B8EDF83D3D4DC3699CC808 /* Pods-Swift_EW202WSDKDemo.debug.xcconfig */,
 				EA3B6AAFCB6B916A77F61401 /* Pods-Swift_EW202WSDKDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		77C66DED3C1357EE6FF444E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26872C74249B14DD002FFD15 /* libc++.tbd */,
 				57C572E12EB3F329081656B3 /* libPods-Swift_EW202WSDKDemo.a */,
 			);
 			name = Frameworks;
@@ -151,9 +183,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26872C7D249B18F2002FFD15 /* ControlViewController.xib in Resources */,
+				26872C81249B1902002FFD15 /* SettingViewController.xib in Resources */,
 				26872C46249B1289002FFD15 /* LaunchScreen.storyboard in Resources */,
 				26872C43249B1289002FFD15 /* Assets.xcassets in Resources */,
 				26872C41249B1286002FFD15 /* Main.storyboard in Resources */,
+				26872C84249B19A7002FFD15 /* LoginViewController.xib in Resources */,
+				26872C50249B1445002FFD15 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,9 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26872C85249B19A7002FFD15 /* LoginViewController.swift in Sources */,
+				26872C80249B1902002FFD15 /* SettingViewController.swift in Sources */,
+				26872C4F249B1445002FFD15 /* MainViewController.swift in Sources */,
 				26872C3E249B1286002FFD15 /* ViewController.swift in Sources */,
+				26872C7C249B18F2002FFD15 /* ControlViewController.swift in Sources */,
 				26872C3A249B1286002FFD15 /* AppDelegate.swift in Sources */,
-				26872C3C249B1286002FFD15 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -321,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -338,6 +377,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NV3296URNT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swift_EW202WSDKDemo",
+				);
 				INFOPLIST_FILE = Swift_EW202WSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -357,6 +400,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NV3296URNT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swift_EW202WSDKDemo",
+				);
 				INFOPLIST_FILE = Swift_EW202WSDKDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
