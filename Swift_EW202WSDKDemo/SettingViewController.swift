@@ -66,7 +66,7 @@ class SettingViewController: UIViewController {
         
         if (sender as! UIButton).isSelected
         {
-            SLPLTcpManager.sharedLTCP()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 1, musicID: musicID, deviceInfo: "EW22W20C00045", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+            SLPLTcpManager.sharedLTCP()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 1, musicID: musicID, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
                 
                 
                 if status == SLPDataTransferStatus.succeed
@@ -82,7 +82,7 @@ class SettingViewController: UIViewController {
         else
         {
             
-            SLPLTcpManager.sharedLTCP()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 0, musicID: musicID, deviceInfo: "EW22W20C00045", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+            SLPLTcpManager.sharedLTCP()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 0, musicID: musicID, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
                 
                 if status == SLPDataTransferStatus.succeed
                 {
@@ -114,7 +114,7 @@ class SettingViewController: UIViewController {
         alarmInfo.timestamp = UInt32(NSDate().timeIntervalSince1970)
         alarmInfo.enable = 1
         
-        SLPLTcpManager.sharedLTCP()?.alarmConfig(alarmInfo, deviceInfo: "EW22W20C00045", deviceType: SLPDeviceTypes.EW202W, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedLTCP()?.alarmConfig(alarmInfo, deviceInfo: "EW22W20C00044", deviceType: SLPDeviceTypes.EW202W, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
             if status == SLPDataTransferStatus.succeed
             {
                 print("save alarm succeed !")
