@@ -22,6 +22,19 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var alarmLightSwitch: UISwitch!
     @IBOutlet weak var snoozeSwitch: UISwitch!
     
+    @IBOutlet weak var timeFormat: UITextField!
+    @IBOutlet weak var saveTimeFormat: UIButton!
+
+    @IBOutlet weak var syncServerTimeSwitch: UISwitch!
+
+    @IBOutlet weak var clockSwitch: UISwitch!
+    @IBOutlet weak var clockStartMinTextField: UITextField!
+    @IBOutlet weak var clockStartHourTextField: UITextField!
+    @IBOutlet weak var clockEndMinTextField: UITextField!
+    @IBOutlet weak var clockEndHourTextField: UITextField!
+    @IBOutlet weak var saveClock: UIButton!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -95,6 +108,58 @@ class SettingViewController: UIViewController {
             })
             
         }
+    }
+    
+    @IBAction func saveTime(_ sender: Any) {
+        let time  = UInt8(self.timeFormat.text!)!
+
+        SLPLTcpManager.sharedLTCP()?.ew202wConfigSystem(0, value: time == 12 ? 0 : 1, pincode: "", deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+            if status == SLPDataTransferStatus.succeed
+            {
+                print("save time format succeed !")
+            }
+            else
+            {
+                print("save time format failed !")
+            }
+        })
+    }
+    
+    @IBAction func syncServerTimeSwitchAction(_ sender: Any) {
+        let isOpen = self.syncServerTimeSwitch.isOn ? 1 : 0
+        
+        SLPLTcpManager.sharedLTCP()?.ew202wConfigSystem(1, value: UInt8(isOpen), pincode: "", deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+            if status == SLPDataTransferStatus.succeed
+            {
+                print("save sync server time succeed !")
+            }
+            else
+            {
+                print("save sync server time failed !")
+            }
+        })
+    }
+    
+    @IBAction func saveClock(_ sender: Any) {
+        ///时钟休眠结构
+        let clock :SLPClockDormancyBean = SLPClockDormancyBean()
+        
+        clock.flag = self.clockSwitch.isOn ? 1 : 0
+        clock.startHour = UInt8(self.clockStartHourTextField.text!)!
+        clock.startMin = UInt8(self.clockStartMinTextField.text!)!
+        clock.endHour = UInt8(self.clockEndHourTextField.text!)!
+        clock.endMin = UInt8(self.clockEndMinTextField.text!)!
+
+        SLPLTcpManager.sharedLTCP()?.configClockDormancy(clock, deviceInfo: "EW22W20C00044", timeOut: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+            if status == SLPDataTransferStatus.succeed
+            {
+                print("save clock succeed !")
+            }
+            else
+            {
+                print("save clock failed !")
+            }
+        })
     }
     
     @IBAction func saveAlarmAction(_ sender: Any) {

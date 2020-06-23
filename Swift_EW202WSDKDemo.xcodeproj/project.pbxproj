@@ -448,7 +448,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.medicatech.Swift-EW202WSDKDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/san/Desktop/WorkProject/GitGubProject/Swift_EW202WSDkDemo/Swift_EW202WSDKDemo/Control/Button/Swift_EW202WSDKDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Swift_EW202WSDKDemo/Control/Button/Swift_EW202WSDKDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,7 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.medicatech.Swift-EW202WSDKDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/san/Desktop/WorkProject/GitGubProject/Swift_EW202WSDkDemo/Swift_EW202WSDKDemo/Control/Button/Swift_EW202WSDKDemo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Swift_EW202WSDKDemo/Control/Button/Swift_EW202WSDKDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
