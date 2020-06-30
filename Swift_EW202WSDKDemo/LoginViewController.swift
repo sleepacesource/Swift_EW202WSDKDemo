@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import EW202W
+import SLPTCP
+import SLPCommon
 
 class LoginViewController: UIViewController {
     
@@ -41,12 +42,28 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func connect(_ sender: Any) {
+        var dictionary = Dictionary<String, String>();
+        dictionary = ["url": self.urlTextfield.text!, "channelID":self.channelidTextfield.text!]
+
+        SLPHTTPManager.sharedInstance().initHttpServiceInfo(dictionary);
         
-        SLPLTcpManager.sharedLTCP()?.installSDK(withToken: self.tokenTextfield.text, ip: self.urlTextfield.text, channelID: NSInteger(self.channelidTextfield.text!) ?? 0 , timeout: 10.0, completion: { (status: SLPDataTransferStatus, data: Any?) in
-            if status == SLPDataTransferStatus.succeed
+        SLPHTTPManager.sharedInstance().authorize(self.tokenTextfield.text!, timeout: 0, completion: { (status: Bool, json: Any?, error: String) in
+            if status == true
             {
-                SLPLTcpManager.sharedLTCP()?.loginDeviceID(self.deviceIdTextfield.text, completion: { (status: SLPDataTransferStatus, data: Any?) in
-                    if status == SLPDataTransferStatus.succeed
+                var jsonDic = Dictionary<String, String>();
+
+                var dic = Dictionary<String, String>();
+                dic = json as! [String : String];
+                
+                var data = Dictionary<String, String>();
+                jsonDic = dic["data"] as! [String : String];
+                data = dic["data"] as! [String : String];
+                var tcpServer = data["tcpServer"];
+                var ip = tcpServer["ip"];
+                let port = UInt8(tcpServer["port"]);
+                
+                SLPLTcpManager.sharedInstance()?.loginHost(tcpServer["port"], port: port, deviceID: self.deviceIdTextfield.text!, token: self.tokenTextfield.text!, completion: { (status: Bool) in
+                    if status == true
                     {
                         print("login succeed")
                     }
@@ -55,12 +72,41 @@ class LoginViewController: UIViewController {
                         print("login failed")
                     }
                 })
+//                SLPLTcpManager.sharedLTCP()?.loginDeviceID(self.deviceIdTextfield.text, completion: { (status: SLPDataTransferStatus, data: Any?) in
+//                    if status == SLPDataTransferStatus.succeed
+//                    {
+//                        print("login succeed")
+//                    }
+//                    else
+//                    {
+//                        print("login failed")
+//                    }
+//                })
             }
             else
             {
                 print("init failed")
             }
         })
+//        SLPLTcpManager.sharedLTCP()?.installSDK(withToken: self.tokenTextfield.text, ip: self.urlTextfield.text, channelID: NSInteger(self.channelidTextfield.text!) ?? 0 , timeout: 10.0, completion: { (status: SLPDataTransferStatus, data: Any?) in
+//            if status == SLPDataTransferStatus.succeed
+//            {
+//                SLPLTcpManager.sharedLTCP()?.loginDeviceID(self.deviceIdTextfield.text, completion: { (status: SLPDataTransferStatus, data: Any?) in
+//                    if status == SLPDataTransferStatus.succeed
+//                    {
+//                        print("login succeed")
+//                    }
+//                    else
+//                    {
+//                        print("login failed")
+//                    }
+//                })
+//            }
+//            else
+//            {
+//                print("init failed")
+//            }
+//        })
     }
     
     @IBAction func upgrade(_ sender: Any) {

@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/SLPCommon.h</key>
 		<data>
-		eau+QRqZs25LRGwJaMQAd3jl6Jk=
+		ilW73oOA8FegCooprwvH65ijP7I=
 		</data>
 		<key>Headers/SLPDataTransferCommon.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/SLPDataTransferDef.h</key>
 		<data>
-		RYwg7ojkGCDlPRmZnobM/leJtcA=
+		/oQY0Pau0EIobzpI4TfV/NNbr8s=
 		</data>
 		<key>Headers/SLPDeviceInfo.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/SLPHTTPManager.h</key>
 		<data>
-		b1wx0WpL7sVbyFnEdnoW/WF9XYM=
+		ssr3NeErcpXs8HVEJlGMzYWKdcM=
 		</data>
 		<key>Headers/SLPLight.h</key>
 		<data>
@@ -70,11 +70,11 @@
 		</data>
 		<key>Headers/SLPTools.h</key>
 		<data>
-		lE7iBL+9PsWqKnh+9Zu94EJiH6o=
+		BpDYha+hPI4Qo+aLcDTeCRwcIL0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		d+2dK1fhWckyMMjmBN1UjnBCQH8=
+		ZLZPCFhDCggDuZZGg1ZyxFGrur4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -153,11 +153,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eau+QRqZs25LRGwJaMQAd3jl6Jk=
+			ilW73oOA8FegCooprwvH65ijP7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			57aNGGyR2s05RJxU2nWXgKScDkyrG5sLlNlhOc1iVqc=
+			TCGmT84EcCnmzfX85Ju81NfFhZhkxdcVkV0OnuytlfE=
 			</data>
 		</dict>
 		<key>Headers/SLPDataTransferCommon.h</key>
@@ -175,11 +175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RYwg7ojkGCDlPRmZnobM/leJtcA=
+			/oQY0Pau0EIobzpI4TfV/NNbr8s=
 			</data>
 			<key>hash2</key>
 			<data>
-			MscL7Mds8ENQBS89csKibrkJ6CJR5L/uwQaAO420Rjs=
+			Wkcqk93PWNIsBy9bumH/1qRSN2BHxtdZEUz6VEC3kjw=
 			</data>
 		</dict>
 		<key>Headers/SLPDeviceInfo.h</key>
@@ -208,11 +208,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b1wx0WpL7sVbyFnEdnoW/WF9XYM=
+			ssr3NeErcpXs8HVEJlGMzYWKdcM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Covx3NTPqhk9vvbYMHNfNZdOlBH43CCBHhFBvyKEDmc=
+			qJOe2omGTgwiMVZ48vYJLRVOIbRfsc4fdqMQr4ZcIkw=
 			</data>
 		</dict>
 		<key>Headers/SLPLight.h</key>
@@ -263,11 +263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lE7iBL+9PsWqKnh+9Zu94EJiH6o=
+			BpDYha+hPI4Qo+aLcDTeCRwcIL0=
 			</data>
 			<key>hash2</key>
 			<data>
-			yJIGuajAF7uqIoaH70XM/W9ZNRu6k8/1phUdKknC9Y0=
+			zl2YgOX8Kbdjfzf+1r7HoPIjErOGJ8BlJSCdsT4286M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
