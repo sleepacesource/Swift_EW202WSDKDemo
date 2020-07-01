@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <EW202W/EW202WAidInfo.h>
-#import <EW202W/SLPLTcpUpgradeInfo.h>
+#import <SLPTCP/EW202WAidInfo.h>
+#import <SLPTCP/SLPLTcpUpgradeInfo.h>
 
 #define SharedDataManager [DataManager sharedDataManager]
 @class CBPeripheral;

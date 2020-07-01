@@ -82,7 +82,7 @@ class SleepAidViewController: UIViewController {
         let vol  = UInt8(self.volumeTextField.text!)!
         aidInfo.volume = vol
         
-        SLPLTcpManager.sharedLTCP()?.ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+        SLPLTcpManager.sharedInstance().ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
             
             if status == SLPDataTransferStatus.succeed
             {
@@ -108,7 +108,7 @@ class SleepAidViewController: UIViewController {
         if (sender as! UIButton).isSelected {
             aidInfo.musicFlag = 0
             
-            SLPLTcpManager.sharedLTCP()?.ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+            SLPLTcpManager.sharedInstance().ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
                 
                 if status == SLPDataTransferStatus.succeed
                 {
@@ -125,7 +125,7 @@ class SleepAidViewController: UIViewController {
         {
             aidInfo.musicFlag = 1
             
-            SLPLTcpManager.sharedLTCP()?.ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+            SLPLTcpManager.sharedInstance().ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
                 
                 if status == SLPDataTransferStatus.succeed
                 {
@@ -155,7 +155,7 @@ class SleepAidViewController: UIViewController {
         aidInfo.w = w!;
         aidInfo.brightness = br!
         
-        SLPLTcpManager.sharedLTCP()?.ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+        SLPLTcpManager.sharedInstance().ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
             
             if status == SLPDataTransferStatus.succeed
             {
@@ -174,7 +174,7 @@ class SleepAidViewController: UIViewController {
         let aidInfo : SLPAidInfo = SLPAidInfo()
         aidInfo.lightFlag = 0;
         
-        SLPLTcpManager.sharedLTCP()?.ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+        SLPLTcpManager.sharedInstance().ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
             
             if status == SLPDataTransferStatus.succeed
             {
@@ -210,7 +210,7 @@ class SleepAidViewController: UIViewController {
         aidInfo.brightness = br
         aidInfo.aidStopDuration = aidStopDuration
         
-        SLPLTcpManager.sharedLTCP()?.ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+        SLPLTcpManager.sharedInstance().ew202wConfigAidInfo(aidInfo, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
             
             if status == SLPDataTransferStatus.succeed
             {
