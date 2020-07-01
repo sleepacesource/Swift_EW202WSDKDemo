@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/SLPTCP.h</key>
 		<data>
-		vvswAn7V1XIo4vU/WZIaJt5fwyo=
+		ejliqP35ojQqzh2Jpr845sW9Hpw=
 		</data>
 		<key>Headers/SLPTCPDelegate.h</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		66SAyMiZuu7u0yW0m4rb+3pILZQ=
+		FTIy9Rfla9EbboIFyvuBCR0J+KA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -340,11 +340,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vvswAn7V1XIo4vU/WZIaJt5fwyo=
+			ejliqP35ojQqzh2Jpr845sW9Hpw=
 			</data>
 			<key>hash2</key>
 			<data>
-			rhPWLwo1O4tAhicShHU3d10VxWgbUhpmwKFIi3hyDS0=
+			zzsPi1mp5kyEO9ReErGteqY5kR1Xj8bbu0BIL03S8ZE=
 			</data>
 		</dict>
 		<key>Headers/SLPTCPDelegate.h</key>

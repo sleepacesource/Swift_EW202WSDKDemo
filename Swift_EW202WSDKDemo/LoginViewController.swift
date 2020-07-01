@@ -50,19 +50,15 @@ class LoginViewController: UIViewController {
         SLPHTTPManager.sharedInstance().authorize(self.tokenTextfield.text!, timeout: 0, completion: { (status: Bool, json: Any?, error: String) in
             if status == true
             {
-                var jsonDic = Dictionary<String, String>();
-
-                var dic = Dictionary<String, String>();
-                dic = json as! [String : String];
+                let dic = json as? [String: Any?];
+                                
+                let data = dic?["data"] as? [String: Any?];
                 
-                var data = Dictionary<String, String>();
-                jsonDic = dic["data"] as! [String : String];
-                data = dic["data"] as! [String : String];
-                var tcpServer = data["tcpServer"];
-                var ip = tcpServer["ip"];
-                let port = UInt8(tcpServer["port"]);
+                let tcpServer = data?["tcpServer"] as? [String : String];
+                let ip = tcpServer?["ip"];
+                let port = Int((tcpServer?["port"]!)!);
                 
-                SLPLTcpManager.sharedInstance()?.loginHost(tcpServer["port"], port: port, deviceID: self.deviceIdTextfield.text!, token: self.tokenTextfield.text!, completion: { (status: Bool) in
+                SLPLTcpManager.sharedInstance()?.loginHost(ip, port: port!, deviceID: self.deviceIdTextfield.text!, token: self.tokenTextfield.text!, completion: { (status: Bool) in
                     if status == true
                     {
                         print("login succeed")
@@ -72,50 +68,20 @@ class LoginViewController: UIViewController {
                         print("login failed")
                     }
                 })
-//                SLPLTcpManager.sharedLTCP()?.loginDeviceID(self.deviceIdTextfield.text, completion: { (status: SLPDataTransferStatus, data: Any?) in
-//                    if status == SLPDataTransferStatus.succeed
-//                    {
-//                        print("login succeed")
-//                    }
-//                    else
-//                    {
-//                        print("login failed")
-//                    }
-//                })
             }
             else
             {
                 print("init failed")
             }
         })
-//        SLPLTcpManager.sharedLTCP()?.installSDK(withToken: self.tokenTextfield.text, ip: self.urlTextfield.text, channelID: NSInteger(self.channelidTextfield.text!) ?? 0 , timeout: 10.0, completion: { (status: SLPDataTransferStatus, data: Any?) in
-//            if status == SLPDataTransferStatus.succeed
-//            {
-//                SLPLTcpManager.sharedLTCP()?.loginDeviceID(self.deviceIdTextfield.text, completion: { (status: SLPDataTransferStatus, data: Any?) in
-//                    if status == SLPDataTransferStatus.succeed
-//                    {
-//                        print("login succeed")
-//                    }
-//                    else
-//                    {
-//                        print("login failed")
-//                    }
-//                })
-//            }
-//            else
-//            {
-//                print("init failed")
-//            }
-//        })
     }
     
     @IBAction func upgrade(_ sender: Any) {
-        
-        SLPLTcpManager.sharedLTCP()?.publicUpdateOperation(withDeviceID: self.deviceIdTextfield.text, deviceType: SLPDeviceTypes.EW202W, firmwareType: 1, firmwareVersion: self.versionTextfield.text, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance().publicUpdateOperation(withDeviceID: self.deviceIdTextfield.text!, deviceType: SLPDeviceTypes.EW202W, firmwareType: 1, firmwareVersion: UInt16(self.versionTextfield.text!)!, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {
-                NotificationCenter.default.addObserver(self, selector: #selector(self.receive_notifaction(notify:)), name: Notification.Name(kNotificationNameUpdateRateChanged), object: nil)
+                NotificationCenter.default.addObserver(self, selector: #selector(self.receive_notifaction(notify:)), name: Notification.Name(kNotificationNameTCPDeviceUpdateRateChanged), object: nil)
             }
             else
             {
@@ -136,9 +102,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func bind(_ sender:Any){
         
-        SLPLTcpManager.sharedLTCP()?.bindDevice(self.deviceIdTextfield.text, leftRight: 0, timeout: 10.0, completion: { (status: SLPDataTransferStatus, data: Any?) in
-            
-            if status == SLPDataTransferStatus.succeed
+        SLPHTTPManager.sharedInstance().bindDevice(withDeviceId: self.deviceIdTextfield.text!, userID: "", timeOut: 10.0, completion: { (status: Bool, data: Any?,  error: String) in
+            if status == true
             {
                 print("bind succeed")
             }
@@ -152,9 +117,9 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func unbind(_ sneder:Any){
-        
-        SLPLTcpManager.sharedLTCP()?.unBindDevice(self.deviceIdTextfield.text, leftRight: 0, timeout: 10.0, completion: { (status: SLPDataTransferStatus, data: Any?)  in
-            if status == SLPDataTransferStatus.succeed
+
+        SLPHTTPManager.sharedInstance().unBindDevice(withDeviceId: self.deviceIdTextfield.text!, userID: "", timeOut: 10.0, completion: { (status: Bool,  error: String) in
+            if status == true
             {
                 print("unbind succeed")
             }

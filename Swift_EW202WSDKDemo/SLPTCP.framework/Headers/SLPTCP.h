@@ -13,6 +13,7 @@
 #import "SLPLTcpManager.h"
 #import "SLPLTcpManager+Public.h"
 #import "SLPLTcpManager+TWP.h"
+#import "SLPLTcpManager+EW202W.h"
 #import "SLPLTcpDef.h"
 #import "SLPLTcpHeads.h"
 
