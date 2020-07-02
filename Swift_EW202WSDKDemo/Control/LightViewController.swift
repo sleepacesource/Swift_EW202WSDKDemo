@@ -63,7 +63,7 @@ class LightViewController: UIViewController {
         light.b = b ?? 0
         light.w = w ?? 0
         
-        SLPLTcpManager.sharedInstance().ew202wLightControlOperation(1, brightness: br, lightMode: 0xff, light: light, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(1, brightness: br, lightMode: 0xff, light: light, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {
@@ -91,7 +91,7 @@ class LightViewController: UIViewController {
         light.b = b ?? 0
         light.w = w ?? 0
         
-        SLPLTcpManager.sharedInstance().ew202wLightControlOperation(2, brightness: br, lightMode: 0xff, light: light, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(2, brightness: br, lightMode: 0xff, light: light, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {
@@ -108,7 +108,7 @@ class LightViewController: UIViewController {
     
     @IBAction func closeLight(_ sender: Any) {
         
-        SLPLTcpManager.sharedInstance().ew202wLightControlOperation(0, brightness: 0, lightMode: 0xff, light:  SLPLight(), deviceInfo: "EW22W20C00044", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(0, brightness: 0, lightMode: 0xff, light:  SLPLight(), deviceInfo: "EW22W20C00044", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {

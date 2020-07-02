@@ -77,7 +77,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func upgrade(_ sender: Any) {
-        SLPLTcpManager.sharedInstance().publicUpdateOperation(withDeviceID: self.deviceIdTextfield.text!, deviceType: SLPDeviceTypes.EW202W, firmwareType: 1, firmwareVersion: UInt16(self.versionTextfield.text!)!, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.publicUpdateOperation(withDeviceID: self.deviceIdTextfield.text!, deviceType: SLPDeviceTypes.EW202W, firmwareType: 1, firmwareVersion: UInt16(self.versionTextfield.text!)!, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {

@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,readonly) NSString *urlString;
 @property (nonatomic,readonly) NSString *channelID;
 
-+(SLPHTTPManager*)sharedInstance;
++ (SLPHTTPManager *)sharedInstance;
 
 /*
  *
