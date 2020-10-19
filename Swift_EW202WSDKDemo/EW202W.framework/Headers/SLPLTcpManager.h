@@ -85,7 +85,7 @@
  */
 - (void)alarmConfig:(SLPAlarmInfo *)alarmInfo deviceInfo:(NSString *)deviceName deviceType:(SLPDeviceTypes)deviceType  timeout:(CGFloat)timeout callback:(SLPTransforCallback)handle;
 
-/*固件升级通知
+/*固件升级通知K
 deviceID           :设备ID
 deviceType         :设备类型
 firmwareType       :固件类型
