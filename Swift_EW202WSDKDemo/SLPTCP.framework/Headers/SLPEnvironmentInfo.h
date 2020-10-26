@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 //湿度：0 -> 100
 @property (nonatomic, assign) UInt8 humidity;
 
+// 错误码
+@property (nonatomic,assign) UInt16 errorCode;
+
 @end
 
 NS_ASSUME_NONNULL_END

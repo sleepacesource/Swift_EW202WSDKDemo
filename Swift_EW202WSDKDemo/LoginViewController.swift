@@ -58,7 +58,7 @@ class LoginViewController: UIViewController {
                 let ip = tcpServer?["ip"];
                 let port = Int((tcpServer?["port"]!)!);
                 
-                SLPLTcpManager.sharedInstance()?.loginHost(ip, port: port!, deviceID: self.deviceIdTextfield.text!, token: self.tokenTextfield.text!, completion: { (status: Bool) in
+                SLPLTcpManager.sharedInstance()?.loginHost(ip, port: port!, token: self.tokenTextfield.text!, completion: { (status: Bool) in
                     if status == true
                     {
                         print("login succeed")
@@ -77,7 +77,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func upgrade(_ sender: Any) {
-        SLPLTcpManager.sharedInstance()?.publicUpdateOperation(withDeviceID: self.deviceIdTextfield.text!, deviceType: SLPDeviceTypes.EW202W, firmwareType: 1, firmwareVersion: UInt16(self.versionTextfield.text!)!, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.publicUpdateOperation(withDeviceID: self.deviceIdTextfield.text!, deviceType: SLPDeviceTypes.EW202W, firmwareType: 1, firmwareVersion: self.versionTextfield.text!, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {
@@ -102,7 +102,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func bind(_ sender:Any){
         
-        SLPHTTPManager.sharedInstance().bindDevice(withDeviceId: self.deviceIdTextfield.text!, userID: "", timeOut: 10.0, completion: { (status: Bool, data: Any?,  error: String) in
+        SLPHTTPManager.sharedInstance().bindDevice(withDeviceId: self.deviceIdTextfield.text!, timeOut: 10.0, completion: { (status: Bool, data: Any?,  error: String) in
             if status == true
             {
                 print("bind succeed")
@@ -118,7 +118,7 @@ class LoginViewController: UIViewController {
 
     @IBAction func unbind(_ sneder:Any){
 
-        SLPHTTPManager.sharedInstance().unBindDevice(withDeviceId: self.deviceIdTextfield.text!, userID: "", timeOut: 10.0, completion: { (status: Bool,  error: String) in
+        SLPHTTPManager.sharedInstance().unBindDevice(withDeviceId: self.deviceIdTextfield.text!, timeOut: 10.0, completion: { (status: Bool,  error: String) in
             if status == true
             {
                 print("unbind succeed")

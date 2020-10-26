@@ -58,6 +58,7 @@ typedef NS_ENUM(NSInteger,SLPLTCPMessagetUniqTypes) {
     SLPLTCPMessagetUniqType_NoxRequestRealtimeData,//请求实时数据
     SLPLTCPMessagetUniqType_PublicPostRealtimeData,//实时数据报送
     SLPLTCPMessagetUniqType_PublicPostOriginalData,//原始数据
+    SLPLTCPMessagetUniqType_PublicPostHistoryAnalysisData,//历史分析报告数据报送通知
     SLPLTCPMessagetUniqType_NoxNightLightData,  // 小夜灯
     SLPLTCPMessagetUniqType_NoxConfigureAlbum,
     SLPLTCPMessagetUniqType_NoxDeviceInfo,
@@ -103,6 +104,21 @@ typedef NS_ENUM(NSInteger,SLPLTCPMessagetUniqTypes) {
     SLPLTCPMessagetUniqType_EW202W_ConfigSystem,
     SLPLTCPMessagetUniqType_EW202W_GetSystem,
     SLPLTCPMessagetUniqType_EW202W_PostWorkMode,//EW202W主动发送的工作信息发生改变
+    SLPLTCPMessagetUniqType_SA1001_SleepAidOperation,
+    SLPLTCPMessagetUniqType_SA1001_Config,
+    SLPLTCPMessagetUniqType_SA1001_MusicDownload,
+    SLPLTCPMessagetUniqType_SA1001_MusicDownloadPost,//音乐下载进度
+    SLPLTCPMessagetUniqType_SA1001_LightOperation,
+    SLPLTCPMessagetUniqType_SA1001_AlarmOperation,
+    SLPLTCPMessagetUniqType_SA1001_AromaOperation,
+    SLPLTCPMessagetUniqType_SA1001_SceneConfig,
+    SLPLTCPMessagetUniqType_SA1001_AlarmConfig,
+    SLPLTCPMessagetUniqType_SA1001_NightLightConfig,
+    SLPLTCPMessagetUniqType_SA1001_CenterConfig,
+    SLPLTCPMessagetUniqType_SA1001_TimeAromaConfig,
+    SLPLTCPMessagetUniqType_SA1001_GetOperatingMode,
+    SLPLTCPMessagetUniqType_SA1001_PostWorkMode,//sa1001主动发送的工作信息发生改变
+
     SLPlTCPMessagetUniqType_None,
 };
 

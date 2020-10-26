@@ -152,7 +152,7 @@ class SettingViewController: UIViewController {
 
         let dic = ["sleepFlag":(self.clockSwitch.isOn ? "1" : "0"),"startHour" : self.clockStartHourTextField.text!,"startMin" : self.clockEndHourTextField.text!,"endHour" : self.clockEndHourTextField.text!,"endMin" : self.clockEndMinTextField.text!]
         
-        SLPHTTPManager.sharedInstance().configClockDormancy(withParameters: dic, deviceInfo: "EW22W20C00044", userID: "", timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
+        SLPHTTPManager.sharedInstance().configClockDormancy(withParameters: dic, deviceInfo: "EW22W20C00044", timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
             if status == true
             {
                 print("save clock succeed !")
@@ -169,7 +169,7 @@ class SettingViewController: UIViewController {
         ///闹钟结构
         let dic = ["num":"1","alarmId" : "0","alarmFlag" : self.alrmRepeatTextField.text!,"smartFlag" : "0","smartOffset" : "0","hour" : self.alarmHourTextField.text!,"min" : self.alarmMinTextField.text!,"week" : self.alrmRepeatTextField.text!,"lazyTimes" : (self.snoozeSwitch.isOn ? "3" : "0"),"lazyTime" : "9","volum" : self.volumeTextField.text!,"lightStrength" : "100","musicId" : self.musicIDTextField.text!,"timeStamp" : String(NSDate().timeIntervalSince1970),"useFlag" : "1"]
         
-        SLPHTTPManager.sharedInstance().alarmConfig(withParameters: dic, deviceInfo: "EW22W20C00044", deviceType: SLPDeviceTypes.EW202W, userID: "", timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
+        SLPHTTPManager.sharedInstance().alarmConfig(withParameters: dic, deviceInfo: "EW22W20C00044", deviceType: SLPDeviceTypes.EW202W, timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
             if status == true
             {
                 print("save alarm succeed !")

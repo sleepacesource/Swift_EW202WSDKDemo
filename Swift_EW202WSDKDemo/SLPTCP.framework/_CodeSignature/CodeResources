@@ -6,43 +6,59 @@
 	<dict>
 		<key>Headers/EW202WAidInfo.h</key>
 		<data>
-		2fkWNoxBynMYh4fmfAbrG88TUvY=
+		79++78LRfBOankPqQG3ACAKeWxc=
 		</data>
 		<key>Headers/EW202WAlarmInfo.h</key>
 		<data>
-		Xe1/6BZFy+E1FnnKzhCmQBrGLQc=
+		JfY30BhfoYS61Lo1vjEzBSCKnaE=
 		</data>
 		<key>Headers/EW202WClockDormancyBean.h</key>
 		<data>
-		GPPJ3sLbJz157D4P60+C3jngtr8=
+		8Y0xgsBW4C4HTFBiI/giMUwIVX8=
 		</data>
 		<key>Headers/EW202WDeviceInfo.h</key>
 		<data>
-		qag6mnjHOn53ux1+ruGbq+LGFcI=
+		cSvUqUAkz16RDaZtOAaDIazQTEI=
 		</data>
 		<key>Headers/EW202WSystemInfo.h</key>
 		<data>
-		/7gcHofdIDUco3RhCnl1J1HUeUc=
+		1r+QyjVK6hwOwzGV/LEyd7UpEKg=
 		</data>
 		<key>Headers/EW202WWorkState.h</key>
 		<data>
-		SNtTfZzedttByrODX5Mmi3Rf7Fs=
+		rrn6KpsfqV67+90WMed/00/OB18=
 		</data>
-		<key>Headers/GCDAsyncSocket.h</key>
+		<key>Headers/SA1001AidInfo.h</key>
 		<data>
-		/lZI/cTHU4xM/6tkj6KfMo4B0Ls=
+		1IyPa7cztucor9QE7NWehGViVxo=
 		</data>
-		<key>Headers/GCDAsyncUdpSocket.h</key>
+		<key>Headers/SA1001AlarmInfo.h</key>
 		<data>
-		0481iNPobQghjVX74kpxRbfXKpI=
+		qhOoERtYOPXJedWr/JCkakf9QWE=
+		</data>
+		<key>Headers/SA1001MusicDownloadStatus.h</key>
+		<data>
+		bu0qCsah/iPu50/zo5mrKM9zyWU=
+		</data>
+		<key>Headers/SA1001NightLightInfo.h</key>
+		<data>
+		GGKsuKHml8KUZWO0vRGdOE6G9iM=
+		</data>
+		<key>Headers/SA1001TimeAromaInfo.h</key>
+		<data>
+		/gdehonyQcMskeNURbIdrKc8ikc=
+		</data>
+		<key>Headers/SA1001WorkMode.h</key>
+		<data>
+		vQAftvAu1w6nxTFTIaaTrtfdYwk=
 		</data>
 		<key>Headers/SLPCollectStatus.h</key>
 		<data>
-		5byiWLlz/QORl4SBYfLFbtHcCks=
+		1SO8QCxWPFPEaeaONJZBjtHXM5k=
 		</data>
 		<key>Headers/SLPEnvironmentInfo.h</key>
 		<data>
-		lVgIY55tkQOa2v4vfasYXbg0pOE=
+		rMTgDNE0L6kLlSWdynIB+jRxZ2Q=
 		</data>
 		<key>Headers/SLPLTcp.h</key>
 		<data>
@@ -50,27 +66,31 @@
 		</data>
 		<key>Headers/SLPLTcpDef.h</key>
 		<data>
-		djUWQEYt83IDgdBWSMxLZIL5Yow=
+		jHAusVPDBohP12AA7hug/9Jtcvk=
 		</data>
 		<key>Headers/SLPLTcpHeads.h</key>
 		<data>
-		0a9uiuBFK7uACKq05uHlEV6qx1M=
+		8/hkho3zpvIthfOvGSIAqc1FW/U=
 		</data>
 		<key>Headers/SLPLTcpManager+EW202W.h</key>
 		<data>
-		mw4F3V9d3YuOgsgzHD18gAxi6t0=
+		szayuowRKEue96GWpGSFcpCo9NI=
 		</data>
 		<key>Headers/SLPLTcpManager+Public.h</key>
 		<data>
-		epsUosyXPOdplgpFjIoy2AlHmhE=
+		y24/lIl85eMzmIE4ilzFLVXn+w4=
+		</data>
+		<key>Headers/SLPLTcpManager+SA1001.h</key>
+		<data>
+		wZgNJz22cLXB5ajyNmjyk86F12w=
 		</data>
 		<key>Headers/SLPLTcpManager+TWP.h</key>
 		<data>
-		uI9z2t2AvwPt0Qi9PoxL8ycAE6M=
+		nzhCJdBTOIKajAiOGhUtMDWUbVA=
 		</data>
 		<key>Headers/SLPLTcpManager.h</key>
 		<data>
-		iyXgUXAKML5l+k9R0XQdp6gRNiA=
+		2BW1pIOKS5N5htCR80LKPt55WQA=
 		</data>
 		<key>Headers/SLPLTcpUpgradeInfo.h</key>
 		<data>
@@ -78,11 +98,15 @@
 		</data>
 		<key>Headers/SLPSleepStatus.h</key>
 		<data>
-		0JhxCLy6n/kXy3VP3QKMX8QmdKQ=
+		IigxlRfb8uxfdUS8B7M7V6nMxeE=
 		</data>
 		<key>Headers/SLPTCP.h</key>
 		<data>
-		ejliqP35ojQqzh2Jpr845sW9Hpw=
+		5TuUhkAjpoRWD+jKeqPvVZhZVN8=
+		</data>
+		<key>Headers/SLPTCPBaseEntity.h</key>
+		<data>
+		QiNh0sLiiG5ryEtfSV+iasWJ/PM=
 		</data>
 		<key>Headers/SLPTCPDelegate.h</key>
 		<data>
@@ -90,15 +114,19 @@
 		</data>
 		<key>Headers/SLPTCPOnlineStatus.h</key>
 		<data>
-		kzo3XUrwvYszCGiuBY8N9ectXB4=
+		FBgdXI62c97M7ZUeQXkBKJVsN2o=
+		</data>
+		<key>Headers/SLPTCPPostHistoryFinished.h</key>
+		<data>
+		OQmQvS6RwMzcDj6dYHec6HkCmdk=
 		</data>
 		<key>Headers/SLPTCPPostRealtimeData.h</key>
 		<data>
-		WlVN+mtzsEc42vI32Dl6apv0Z3A=
+		eehP+ZBGNo9Ojbh4iBQ9QWq+xLE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		66SAyMiZuu7u0yW0m4rb+3pILZQ=
+		pFHkRBfWV+8Nd3Z7svWAZ5qlGLA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -114,7 +142,7 @@
 		</data>
 		<key>PrivateHeaders/SLPLTcpCommon.h</key>
 		<data>
-		v+1iBdcZko1BA2DVxP1otci4+nE=
+		+RLLB3FATT7Er+LijTCHGU+FxPg=
 		</data>
 		<key>PrivateHeaders/SLPLTcpSendPacket.h</key>
 		<data>
@@ -131,110 +159,154 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2fkWNoxBynMYh4fmfAbrG88TUvY=
+			79++78LRfBOankPqQG3ACAKeWxc=
 			</data>
 			<key>hash2</key>
 			<data>
-			MvVFYFIgr5KyxVgJPLPtvrzNqNA82oxQLs14f6OAdKQ=
+			LHME/BlLeFO1LYl+KE9u65Sr9nv2N7+cTvod6Ixjg68=
 			</data>
 		</dict>
 		<key>Headers/EW202WAlarmInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Xe1/6BZFy+E1FnnKzhCmQBrGLQc=
+			JfY30BhfoYS61Lo1vjEzBSCKnaE=
 			</data>
 			<key>hash2</key>
 			<data>
-			JXe5G6d6F3PNfbOOzwwtNgwviMWwtIE5KXpLaaEn1bI=
+			bHKdnE81KgUbWjywxtqvykUGIt8tt05qXmDcZgTl9Cw=
 			</data>
 		</dict>
 		<key>Headers/EW202WClockDormancyBean.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GPPJ3sLbJz157D4P60+C3jngtr8=
+			8Y0xgsBW4C4HTFBiI/giMUwIVX8=
 			</data>
 			<key>hash2</key>
 			<data>
-			h7tbFAQQi4Rg/EgJd+Jn/Xaso+Pnylg6RV1N3H0hHLQ=
+			YNWl3c62gZHFje3/RGjvamge0+4jSq79K/CJCs5WFEU=
 			</data>
 		</dict>
 		<key>Headers/EW202WDeviceInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qag6mnjHOn53ux1+ruGbq+LGFcI=
+			cSvUqUAkz16RDaZtOAaDIazQTEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ewdhOss1DkosxrX64MretoRuWfHLx89D/2TK2c7bN2Y=
+			rwaQm54ik0covWO833XiiD0XNRBecdkX2em2X/WCgLM=
 			</data>
 		</dict>
 		<key>Headers/EW202WSystemInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/7gcHofdIDUco3RhCnl1J1HUeUc=
+			1r+QyjVK6hwOwzGV/LEyd7UpEKg=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ad6YuHWaWo/qAcRs8I03JAkVGTXNf7CDxWSw656nNJA=
+			e6pagBq7afgH4Lmi4+3ti4OxidU8IX6Ennzm4pxHgCg=
 			</data>
 		</dict>
 		<key>Headers/EW202WWorkState.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SNtTfZzedttByrODX5Mmi3Rf7Fs=
+			rrn6KpsfqV67+90WMed/00/OB18=
 			</data>
 			<key>hash2</key>
 			<data>
-			cVR6hcjHwYrej4q9yirXaA7Y6GQ/8d7OtYdGSZgvMxg=
+			zQZo3rBkbig/elZVqeNcYy4TQBHv6CYW0dzQ9H1LVaI=
 			</data>
 		</dict>
-		<key>Headers/GCDAsyncSocket.h</key>
+		<key>Headers/SA1001AidInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/lZI/cTHU4xM/6tkj6KfMo4B0Ls=
+			1IyPa7cztucor9QE7NWehGViVxo=
 			</data>
 			<key>hash2</key>
 			<data>
-			aj3NHnhkd9Qjyn4gxK2hqn+1sbqN8Eeb+7Y3xHU9i+4=
+			FnkUeHq4zvIgWb3oz3fYFvQ47uOGg0Q/TZ+KZ/4TUgY=
 			</data>
 		</dict>
-		<key>Headers/GCDAsyncUdpSocket.h</key>
+		<key>Headers/SA1001AlarmInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0481iNPobQghjVX74kpxRbfXKpI=
+			qhOoERtYOPXJedWr/JCkakf9QWE=
 			</data>
 			<key>hash2</key>
 			<data>
-			BPXmqJHe3cPbFYen2pEUSVYA37rH88XjcGHpymyqAn0=
+			IKLxuj02u2sfmkCdye9MPjd1dgQqKKjaHMt2YivD60s=
+			</data>
+		</dict>
+		<key>Headers/SA1001MusicDownloadStatus.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			bu0qCsah/iPu50/zo5mrKM9zyWU=
+			</data>
+			<key>hash2</key>
+			<data>
+			eQnSR31ujPKyy6FY+DmViYtbBmil2E2d/50NfZPxgeE=
+			</data>
+		</dict>
+		<key>Headers/SA1001NightLightInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GGKsuKHml8KUZWO0vRGdOE6G9iM=
+			</data>
+			<key>hash2</key>
+			<data>
+			4N62n5UTQ3PNuovthFujkWXkIVnFf1msyfM5iK5q+yU=
+			</data>
+		</dict>
+		<key>Headers/SA1001TimeAromaInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/gdehonyQcMskeNURbIdrKc8ikc=
+			</data>
+			<key>hash2</key>
+			<data>
+			fePDV3e9LeLJhI3fSLca5r45rpxGp/HcZM49uSU9fZ8=
+			</data>
+		</dict>
+		<key>Headers/SA1001WorkMode.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vQAftvAu1w6nxTFTIaaTrtfdYwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			2Rd95L8Rtjf7wdnwsx+K1nNvpvNfvK60q3GBjm6duwA=
 			</data>
 		</dict>
 		<key>Headers/SLPCollectStatus.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5byiWLlz/QORl4SBYfLFbtHcCks=
+			1SO8QCxWPFPEaeaONJZBjtHXM5k=
 			</data>
 			<key>hash2</key>
 			<data>
-			IhcO8FgfMnpVnqm2PaDEr4ttzgmntjxnhETzWlOxlPw=
+			bFN+BE9YKMclQ8HH0BcTexJN8nGvU+GK3MrAwuO82uM=
 			</data>
 		</dict>
 		<key>Headers/SLPEnvironmentInfo.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lVgIY55tkQOa2v4vfasYXbg0pOE=
+			rMTgDNE0L6kLlSWdynIB+jRxZ2Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			Y1b1jaUxQRb8a76ElwqHLNgMOum+9Oiu02cg4j8/IyA=
+			ZnDtkgmlb0Fva/1ZWg6mZoyIHOdG5Evb/KwnB19IVtk=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcp.h</key>
@@ -252,66 +324,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			djUWQEYt83IDgdBWSMxLZIL5Yow=
+			jHAusVPDBohP12AA7hug/9Jtcvk=
 			</data>
 			<key>hash2</key>
 			<data>
-			S7izqwbnfO0UTzv+3vELzDKqV+rDNobO/NA98jc5Vxs=
+			KKpLiu06DlhzOTie1e+yNmSUvEs/dbwrgKzzZbI1iEA=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpHeads.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0a9uiuBFK7uACKq05uHlEV6qx1M=
+			8/hkho3zpvIthfOvGSIAqc1FW/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			yaBQIGs8MTJQ4rbvhWq6mOzjec9iZYq9sFoeYDNHlwM=
+			kDDZiaeRd+LkYWhZiWmg1YCGFLdksIfqPvzmPulkN5w=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpManager+EW202W.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mw4F3V9d3YuOgsgzHD18gAxi6t0=
+			szayuowRKEue96GWpGSFcpCo9NI=
 			</data>
 			<key>hash2</key>
 			<data>
-			VO4dGVXlXHWmq0pwIAm0jOkDzsCmddPB31d+KJDmZuw=
+			7wDTTMYAJsw6KFbS0EC2j075smLYs/LDT5REw49T6bw=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpManager+Public.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			epsUosyXPOdplgpFjIoy2AlHmhE=
+			y24/lIl85eMzmIE4ilzFLVXn+w4=
 			</data>
 			<key>hash2</key>
 			<data>
-			qH99mSjPoyGG5WgICillAUxPLUtzhkZs3dXDHWFPKvg=
+			gCXpwjttxpBXvhe4GmudagFAORQCHjIQxLBgDK9JEwQ=
+			</data>
+		</dict>
+		<key>Headers/SLPLTcpManager+SA1001.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wZgNJz22cLXB5ajyNmjyk86F12w=
+			</data>
+			<key>hash2</key>
+			<data>
+			EkM6mtJsqXsDKFCDCSflFjWu1H7qhwQB5kFHnM1z8Gw=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpManager+TWP.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uI9z2t2AvwPt0Qi9PoxL8ycAE6M=
+			nzhCJdBTOIKajAiOGhUtMDWUbVA=
 			</data>
 			<key>hash2</key>
 			<data>
-			CUvd5A8tXtQAx74Kbbk62ITIWOJ6An/TGRnyMwHqsEQ=
+			KJBrQAECIz19BC/8gqb/3GRRUhFHz/opW2V7HIbFg/U=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpManager.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iyXgUXAKML5l+k9R0XQdp6gRNiA=
+			2BW1pIOKS5N5htCR80LKPt55WQA=
 			</data>
 			<key>hash2</key>
 			<data>
-			YsWoAl1V/uohnADFsRJ1iG8V7Q4I6uYGvue3T/5Hs3M=
+			B5teluKWqDaeEsgoTCUHaq4ah5DyiGk1VtwrWKSRXbE=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpUpgradeInfo.h</key>
@@ -329,22 +412,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0JhxCLy6n/kXy3VP3QKMX8QmdKQ=
+			IigxlRfb8uxfdUS8B7M7V6nMxeE=
 			</data>
 			<key>hash2</key>
 			<data>
-			SQcFvQWtN1THlb52t+s3wuVQKapOhgXAM4mpjRqFVMM=
+			XH2m9rHtIQfvG4hVt/fQpIvbEmaV4sGtT7bOxo76JMk=
 			</data>
 		</dict>
 		<key>Headers/SLPTCP.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ejliqP35ojQqzh2Jpr845sW9Hpw=
+			5TuUhkAjpoRWD+jKeqPvVZhZVN8=
 			</data>
 			<key>hash2</key>
 			<data>
-			zzsPi1mp5kyEO9ReErGteqY5kR1Xj8bbu0BIL03S8ZE=
+			zax/VKujx1+0FNUDdyvUSyU9v8dypC4Q6R2GPfYMaVU=
+			</data>
+		</dict>
+		<key>Headers/SLPTCPBaseEntity.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QiNh0sLiiG5ryEtfSV+iasWJ/PM=
+			</data>
+			<key>hash2</key>
+			<data>
+			M8DYlZVkUW9xyMuqJz1JyTfauUgV4VjV/Oltq0hGNqw=
 			</data>
 		</dict>
 		<key>Headers/SLPTCPDelegate.h</key>
@@ -362,22 +456,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kzo3XUrwvYszCGiuBY8N9ectXB4=
+			FBgdXI62c97M7ZUeQXkBKJVsN2o=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZStwqVYo8joRS3mXJvsVTszLjpXYTAo5bm+ZVDmAG+I=
+			LLT8fnjRIoVASujvkk1Sjao+7N66PiY+lKofp0U6lT4=
+			</data>
+		</dict>
+		<key>Headers/SLPTCPPostHistoryFinished.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OQmQvS6RwMzcDj6dYHec6HkCmdk=
+			</data>
+			<key>hash2</key>
+			<data>
+			xzfwf+nwk4kj0ZZEFIOXXKgv6WAF7FmSP8+Sbj5/OMw=
 			</data>
 		</dict>
 		<key>Headers/SLPTCPPostRealtimeData.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WlVN+mtzsEc42vI32Dl6apv0Z3A=
+			eehP+ZBGNo9Ojbh4iBQ9QWq+xLE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ukPFaIroIb1UGHsHQkzHqasfRQHzOiLRvdQ8s6k595I=
+			DVxmq/s0pwE5gY0iAa9Qr/ymKyxAnGz+/B7XW/P9QuI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -417,11 +522,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v+1iBdcZko1BA2DVxP1otci4+nE=
+			+RLLB3FATT7Er+LijTCHGU+FxPg=
 			</data>
 			<key>hash2</key>
 			<data>
-			P5XoiYaymMdQe16tJ1z++zANjz6k4JaHpXZCRTI7bcg=
+			DOHCgXwVcLIySsZtTmdoWIBa+oX/r+gffe+IcxBbtR8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SLPLTcpSendPacket.h</key>

@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <SLPCommon/SLPCommon.h>
+//#import <BluetoothManager/BluetoothManager.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EW202WWorkState : NSObject
+// 错误码
+@property (nonatomic,assign) UInt16 ErrorCode;
 
 @property (nonatomic,assign) UInt8 mode;//工作模式 0: 正常模式 1: 配置模式
 @property (nonatomic,assign) UInt8 lightStatus;//灯状态 0: 关闭 1: 照明灯光 2.助眠灯光 3.自定义颜色灯光 4.闹钟灯光

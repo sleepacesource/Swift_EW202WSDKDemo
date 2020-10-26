@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EW202WSystemInfo : NSObject
+// 错误码
+@property (nonatomic,assign) UInt16 ErrorCode;
 
 @property (nonatomic, assign) UInt8 timeForm;
 @property (nonatomic, assign) UInt8 netSynFlag;

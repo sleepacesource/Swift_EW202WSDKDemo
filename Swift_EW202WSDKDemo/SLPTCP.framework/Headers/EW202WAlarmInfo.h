@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EW202WAlarmInfo : NSObject
+// 错误码
+@property (nonatomic,assign) UInt16 ErrorCode;
 
 @property (nonatomic, assign) UInt8 alarmID;//闹钟编号 0：表示本地闹钟 1：表示APP增加的闹钟，依次增加
 @property (nonatomic, assign) BOOL isOpen;//闹钟开关

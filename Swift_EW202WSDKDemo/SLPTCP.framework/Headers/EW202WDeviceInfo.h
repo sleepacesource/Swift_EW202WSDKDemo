@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EW202WDeviceInfo : NSObject
+// 错误码
+@property (nonatomic,assign) UInt16 ErrorCode;
 
 @property (nonatomic, copy) NSString *deviceID;//设备ID
 @property (nonatomic, assign) NSString *firmwareVersion;//固件版本

@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SLPTCPOnlineStatus : NSObject
+// 错误码
+@property (nonatomic,assign) UInt16 errorCode;
 
 @property (nonatomic , copy) NSString *deviceID;
 @property (nonatomic , assign) UInt16 deviceType;

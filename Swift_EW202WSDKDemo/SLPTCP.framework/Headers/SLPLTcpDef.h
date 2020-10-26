@@ -49,5 +49,21 @@
  */
 #define kNotificationNameDeviceSleepStatusChanged @"kNotificationNameDeviceSleepStatusChanged"
 
+/**
+ 历史数据分析生成概要报送
+ */
+//#define kNotificationNameDevicePostHistoryAnalysisData @"kNotificationNameDevicePostHistoryAnalysisData"
+
+/*
+ 历史数据上传完成通知
+ */
+#define kNotificationNameHistoryDataUploadFinished @"kNotificationNameHistoryDataUploadFinished"
+
+/**
+ SA1001的音乐下载状态发生了变化
+ */
+#define kNotificationNameSA1001MusicDownloadChanged @"kNotificationNameSA1001MusicDownloadChanged"
+
+#define kNotificationNameSA1001WorkModeChanged @"kNotificationNameSA1001WorkModeChanged"//SA1001的工作状态发生了变化
 
 #endif /* SLPLTcpDef_h */
