@@ -79,7 +79,7 @@ class SettingViewController: UIViewController {
         
         if (sender as! UIButton).isSelected
         {
-            SLPLTcpManager.sharedInstance()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 1, musicID: musicID, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+            SLPLTcpManager.sharedInstance()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 1, musicID: musicID, deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
                 
                 
                 if status == SLPDataTransferStatus.succeed
@@ -95,7 +95,7 @@ class SettingViewController: UIViewController {
         else
         {
             
-            SLPLTcpManager.sharedInstance()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 0, musicID: musicID, deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+            SLPLTcpManager.sharedInstance()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 0, musicID: musicID, deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
                 
                 if status == SLPDataTransferStatus.succeed
                 {
@@ -113,7 +113,7 @@ class SettingViewController: UIViewController {
     @IBAction func saveTime(_ sender: Any) {
         let time  = UInt8(self.timeFormat.text!)!
 
-        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(0, value: time == 12 ? 0 : 1, pincode: "", deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(0, value: time == 12 ? 0 : 1, pincode: "", deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
             if status == SLPDataTransferStatus.succeed
             {
                 print("save time format succeed !")
@@ -128,7 +128,7 @@ class SettingViewController: UIViewController {
     @IBAction func syncServerTimeSwitchAction(_ sender: Any) {
         let isOpen = self.syncServerTimeSwitch.isOn ? 1 : 0
         
-        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(1, value: UInt8(isOpen), pincode: "", deviceInfo: "EW22W20C00044", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(1, value: UInt8(isOpen), pincode: "", deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
             if status == SLPDataTransferStatus.succeed
             {
                 print("save sync server time succeed !")
@@ -152,7 +152,7 @@ class SettingViewController: UIViewController {
 
         let dic = ["sleepFlag":(self.clockSwitch.isOn ? "1" : "0"),"startHour" : self.clockStartHourTextField.text!,"startMin" : self.clockEndHourTextField.text!,"endHour" : self.clockEndHourTextField.text!,"endMin" : self.clockEndMinTextField.text!]
         
-        SLPHTTPManager.sharedInstance().configClockDormancy(withParameters: dic, deviceInfo: "EW22W20C00044", timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
+        SLPHTTPManager.sharedInstance().configClockDormancy(withParameters: dic, deviceInfo: "a9p3w87sr4on7", timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
             if status == true
             {
                 print("save clock succeed !")
@@ -168,8 +168,7 @@ class SettingViewController: UIViewController {
         
         ///闹钟结构
         let dic = ["num":"1","alarmId" : "0","alarmFlag" : self.alrmRepeatTextField.text!,"smartFlag" : "0","smartOffset" : "0","hour" : self.alarmHourTextField.text!,"min" : self.alarmMinTextField.text!,"week" : self.alrmRepeatTextField.text!,"lazyTimes" : (self.snoozeSwitch.isOn ? "3" : "0"),"lazyTime" : "9","volum" : self.volumeTextField.text!,"lightStrength" : "100","musicId" : self.musicIDTextField.text!,"timeStamp" : String(NSDate().timeIntervalSince1970),"useFlag" : "1"]
-        
-        SLPHTTPManager.sharedInstance().alarmConfig(withParameters: dic, deviceInfo: "EW22W20C00044", deviceType: SLPDeviceTypes.EW202W, timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
+        SLPHTTPManager.sharedInstance().configAlarmInfo(withParameters: dic, deviceInfo: "a9p3w87sr4on7", deviceType: SLPDeviceTypes.EW202W, timeout: 10.0, completion: { (status: Bool, data: Any?, error: String) in
             if status == true
             {
                 print("save alarm succeed !")
@@ -180,4 +179,25 @@ class SettingViewController: UIViewController {
             }
         })
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.resignTextfiled()
+    }
+    
+    func resignTextfiled() -> Void {
+        
+        self.timeFormat.resignFirstResponder()
+        self.clockStartMinTextField.resignFirstResponder()
+        self.clockStartHourTextField.resignFirstResponder()
+        self.clockEndMinTextField.resignFirstResponder()
+        self.clockEndHourTextField.resignFirstResponder()
+        self.alarmMinTextField.resignFirstResponder()
+        self.alarmHourTextField.resignFirstResponder()
+        self.alrmRepeatTextField.resignFirstResponder()
+        self.musicIDTextField.resignFirstResponder()
+        self.volumeTextField.resignFirstResponder()
+        self.snoozeTextField.resignFirstResponder()
+        
+    }
+    
 }

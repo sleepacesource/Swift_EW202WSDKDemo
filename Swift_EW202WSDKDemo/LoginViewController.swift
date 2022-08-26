@@ -26,10 +26,10 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.initUI()
         
-        self.urlTextfield.text = "http://172.14.0.111:8082";
-        self.channelidTextfield.text = "13700"
-        self.tokenTextfield.text = "kylhm2tu62sw"
-        self.deviceIdTextfield.text = "EW22W20C00044";
+        self.urlTextfield.text = "http://120.24.68.136:8091";
+        self.channelidTextfield.text = "54500"
+        self.tokenTextfield.text = "kxu5jh5xmfap"
+        self.deviceIdTextfield.text = "a9p3w87sr4on7";//EW22W20C00888
         
         
     }
@@ -47,6 +47,7 @@ class LoginViewController: UIViewController {
 
         SLPHTTPManager.sharedInstance().initHttpServiceInfo(dictionary);
         
+        var connectStr = ""
         SLPHTTPManager.sharedInstance().authorize(self.tokenTextfield.text!, timeout: 0, completion: { (status: Bool, json: Any?, error: String) in
             if status == true
             {
@@ -55,23 +56,27 @@ class LoginViewController: UIViewController {
                 let data = dic?["data"] as? [String: Any?];
                 
                 let tcpServer = data?["tcpServer"] as? [String : String];
+                let sid = data?["sid"] as! String;
                 let ip = tcpServer?["ip"];
                 let port = Int((tcpServer?["port"]!)!);
                 
-                SLPLTcpManager.sharedInstance()?.loginHost(ip, port: port!, token: self.tokenTextfield.text!, completion: { (status: Bool) in
-                    if status == true
+                
+                SLPLTcpManager.sharedInstance()?.loginHost(ip, port: port!, token: sid, completion: { (succeed: Bool) in
+                    if succeed
                     {
-                        print("login succeed")
+                        connectStr = NSLocalizedString("connection_succeeded", comment: "")
                     }
                     else
                     {
-                        print("login failed")
+                        connectStr = NSLocalizedString("Connection_failed", comment: "")
                     }
+                    self.alertShow(message: connectStr as NSString)
                 })
             }
             else
             {
-                print("init failed")
+                print("authorize failed")
+                self.alertShow(message: NSLocalizedString("authorize_failed", comment: "") as NSString)
             }
         })
     }
@@ -102,15 +107,19 @@ class LoginViewController: UIViewController {
     
     @IBAction func bind(_ sender:Any){
         
-        SLPHTTPManager.sharedInstance().bindDevice(withDeviceId: self.deviceIdTextfield.text!, timeOut: 10.0, completion: { (status: Bool, data: Any?,  error: String) in
-            if status == true
+        SLPHTTPManager.sharedInstance().bindDevice(withDeviceId: self.deviceIdTextfield.text!, timeOut: 10.0, completion: { (result: Bool, data: Any?,  error: String) in
+            var bindStr = ""
+            if result
             {
                 print("bind succeed")
+                bindStr = NSLocalizedString("bind_account_success", comment: "")
             }
             else
             {
                 print("bind failed")
+                bindStr = NSLocalizedString("bind_fail", comment: "")
             }
+            self.alertShow(message: bindStr as NSString)
             
         })
     }
@@ -118,18 +127,30 @@ class LoginViewController: UIViewController {
 
     @IBAction func unbind(_ sneder:Any){
 
-        SLPHTTPManager.sharedInstance().unBindDevice(withDeviceId: self.deviceIdTextfield.text!, timeOut: 10.0, completion: { (status: Bool,  error: String) in
-            if status == true
+        SLPHTTPManager.sharedInstance().unBindDevice(withDeviceId: self.deviceIdTextfield.text!, timeOut: 10.0, completion: { (result: Bool,  error: String) in
+            var unbindStr = ""
+            if result
             {
                 print("unbind succeed")
+                unbindStr = NSLocalizedString("unbind_success", comment: "")
             }
             else
             {
                 print("unbind failed")
+                unbindStr = NSLocalizedString("unbind_failed", comment: "")
             }
+            
+            self.alertShow(message: unbindStr as NSString)
         })
         
         
+    }
+    
+    func alertShow(message: NSString ) -> Void {
+        let alert = UIAlertController.init(title: "", message: message as String, preferredStyle: .alert)
+        let cancel = UIAlertAction(title: NSLocalizedString("confirm", comment: ""), style: .cancel, handler: nil)
+        alert.addAction(cancel)
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

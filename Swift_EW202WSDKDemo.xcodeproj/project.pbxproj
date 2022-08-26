@@ -29,6 +29,7 @@
 		26872C50249B1445002FFD15 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26872C4E249B1445002FFD15 /* MainViewController.xib */; };
 		26872C75249B14DD002FFD15 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26872C74249B14DD002FFD15 /* libc++.tbd */; };
 		26872C89249B1A29002FFD15 /* SLPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26872C87249B1A29002FFD15 /* SLPCommon.framework */; };
+		269965B128B8C8CC00E30414 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 269965B328B8C8CC00E30414 /* Localizable.strings */; };
 		4C3DE18324AB08FE00C4A31A /* SLPTCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3DE18224AB08FE00C4A31A /* SLPTCP.framework */; };
 		B5F13E0E863AA1E9CDAA9DE2 /* libPods-Swift_EW202WSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C572E12EB3F329081656B3 /* libPods-Swift_EW202WSDKDemo.a */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		26872C4E249B1445002FFD15 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		26872C74249B14DD002FFD15 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		26872C87249B1A29002FFD15 /* SLPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SLPCommon.framework; sourceTree = "<group>"; };
+		269965B228B8C8CC00E30414 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		269965B428B8C8E100E30414 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		4C3DE18224AB08FE00C4A31A /* SLPTCP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SLPTCP.framework; sourceTree = "<group>"; };
 		57C572E12EB3F329081656B3 /* libPods-Swift_EW202WSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Swift_EW202WSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9B8EDF83D3D4DC3699CC808 /* Pods-Swift_EW202WSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_EW202WSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-Swift_EW202WSDKDemo/Pods-Swift_EW202WSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +158,7 @@
 				26872C42249B1289002FFD15 /* Assets.xcassets */,
 				26872C44249B1289002FFD15 /* LaunchScreen.storyboard */,
 				26872C47249B1289002FFD15 /* Info.plist */,
+				269965B328B8C8CC00E30414 /* Localizable.strings */,
 			);
 			path = Swift_EW202WSDKDemo;
 			sourceTree = "<group>";
@@ -220,6 +224,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 26872C2D249B1286002FFD15;
 			productRefGroup = 26872C37249B1286002FFD15 /* Products */;
@@ -241,6 +246,7 @@
 				2640EFA5249B522700947B20 /* ControlViewController.xib in Resources */,
 				26872C43249B1289002FFD15 /* Assets.xcassets in Resources */,
 				26872C41249B1286002FFD15 /* Main.storyboard in Resources */,
+				269965B128B8C8CC00E30414 /* Localizable.strings in Resources */,
 				2640EFA6249B522700947B20 /* SleepAidViewController.xib in Resources */,
 				2640EFA1249B522700947B20 /* LightViewController.xib in Resources */,
 				26872C50249B1445002FFD15 /* MainViewController.xib in Resources */,
@@ -313,6 +319,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		269965B328B8C8CC00E30414 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				269965B228B8C8CC00E30414 /* en */,
+				269965B428B8C8E100E30414 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -320,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -446,6 +463,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.medicatech.Swift-EW202WSDKDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Swift_EW202WSDKDemo/Control/Button/Swift_EW202WSDKDemo-Bridging-Header.h";
@@ -470,6 +488,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.medicatech.Swift-EW202WSDKDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Swift_EW202WSDKDemo/Control/Button/Swift_EW202WSDKDemo-Bridging-Header.h";
