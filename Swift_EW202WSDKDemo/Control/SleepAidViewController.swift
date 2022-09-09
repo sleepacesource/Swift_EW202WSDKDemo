@@ -60,9 +60,9 @@ class SleepAidViewController: UIViewController {
         
         //        default value
         /*音乐编号
-         *31086，31087，31088，31089，31090，31091，31092，31093，31094，31095，31096，31097
+         31131 ，31132，31133，31134，31135，31136，31137，31138，31139，31140，31141，31142
          */
-        self.musicIDTextField.text = "31086"
+        self.musicIDTextField.text = "31131"
         self.volumeTextField.text = "10"
         
         self.rTextField.text = "50"

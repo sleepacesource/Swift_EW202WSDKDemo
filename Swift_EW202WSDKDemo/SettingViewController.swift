@@ -58,9 +58,14 @@ class SettingViewController: UIViewController {
         
         //a闹钟
         /*闹钟音乐编号
-         *31098，31099，31100，31101，31102，31103
+         31143
+         31144
+         31145
+         31146
+         31147
+         31148
          */
-        self.musicIDTextField.text = "31098"
+        self.musicIDTextField.text = "31143"
         self.alarmHourTextField.text = "5"
         self.alarmMinTextField.text = "5"
         self.alrmRepeatTextField.text = "0"
