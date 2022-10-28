@@ -18,12 +18,15 @@ class LightViewController: UIViewController {
     @IBOutlet weak var sendBT1: UIButton!
     @IBOutlet weak var sendBT2: UIButton!
     @IBOutlet weak var closeBT: UIButton!
+    @IBOutlet weak var checkWiFi: UIButton!
+    @IBOutlet weak var wifiLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         self.setUI();
-        
+        self.receiceData()
     }
     
     func setUI() -> Void {
@@ -49,6 +52,19 @@ class LightViewController: UIViewController {
         
     }
     
+    func receiceData() -> Void {
+        //post realtime data
+        NotificationCenter.default.addObserver(self, selector: #selector(receive_wifiSignalChanged(notify:)), name: Notification.Name(kNotificationNameRequestDeviceWiFiSignalChanged), object: nil)
+    }
+    
+    @objc func receive_wifiSignalChanged(notify: NSNotification) -> Void {
+        
+        print("wifi signal--->",notify)
+        
+        let wifi: SLPTCPWiFiInfo = notify.userInfo?[kNotificationPostData] as! SLPTCPWiFiInfo
+        self.wifiLabel.text = String(wifi.signalStrength)
+        
+    }
     
     @IBAction func changeColor(_ sender: Any) {
         let r  = UInt8(self.rText.text!)
@@ -120,6 +136,20 @@ class LightViewController: UIViewController {
             }
         })
     }
+    
+    @IBAction func checkWiFiSignal() {
+         let deviceId =  UserDefaults.standard.string(forKey: "deviceID")!
+        
+         SLPLTcpManager.sharedInstance()?.publicGetWiFiSignal(withDeviceID: deviceId, deviceType: SLPDeviceTypes.TWP3, timeout: 10.0    , callback: {
+             (status: SLPDataTransferStatus, data: Any?)in
+             if status == SLPDataTransferStatus.succeed
+             {
+                 let wifi : SLPTCPWiFiInfo = data as! SLPTCPWiFiInfo
+               
+                 self.wifiLabel.text = String(wifi.signalStrength)
+             }
+         })
+     }
     
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -17,5 +17,6 @@
 #import "SLPLTcpUpgradeInfo.h"
 #import "SLPTCPPostHistoryFinished.h"
 #import "SLPTCPBaseEntity.h"
+#import "SLPTCPWiFiInfo.h"
 
 #endif /* SLPLTcpHeads_h */

@@ -66,11 +66,11 @@
 		</data>
 		<key>Headers/SLPLTcpDef.h</key>
 		<data>
-		jHAusVPDBohP12AA7hug/9Jtcvk=
+		vOGZ/8gNhj1lkq+mM+2+8ezLiCY=
 		</data>
 		<key>Headers/SLPLTcpHeads.h</key>
 		<data>
-		8/hkho3zpvIthfOvGSIAqc1FW/U=
+		nW2pRfQARW5YsCNiDiWEz8pTkUo=
 		</data>
 		<key>Headers/SLPLTcpManager+EW202W.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/SLPLTcpManager+Public.h</key>
 		<data>
-		y24/lIl85eMzmIE4ilzFLVXn+w4=
+		OQ+z/Yh1e3EmqcSx6zYfDw7WiNg=
 		</data>
 		<key>Headers/SLPLTcpManager+SA1001.h</key>
 		<data>
@@ -124,9 +124,13 @@
 		<data>
 		eehP+ZBGNo9Ojbh4iBQ9QWq+xLE=
 		</data>
+		<key>Headers/SLPTCPWiFiInfo.h</key>
+		<data>
+		vZll+6rbUdjUTIrH1UXs6SUArqs=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		BXJL3AaRZP8IdpNNLQXvPjWkXe0=
+		iGiKKuz689v8dVWqN0B/9XMx7so=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -142,7 +146,7 @@
 		</data>
 		<key>PrivateHeaders/SLPLTcpCommon.h</key>
 		<data>
-		Ss3kVkEq6EZGKOwfQq6X8duDE4g=
+		XoyNeELdMZh7QGb69BIeIKKTyy4=
 		</data>
 		<key>PrivateHeaders/SLPLTcpSendPacket.h</key>
 		<data>
@@ -324,22 +328,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jHAusVPDBohP12AA7hug/9Jtcvk=
+			vOGZ/8gNhj1lkq+mM+2+8ezLiCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			KKpLiu06DlhzOTie1e+yNmSUvEs/dbwrgKzzZbI1iEA=
+			59uNcWNIeRuUhdDuHLW8KomQIkLzDjSeKqogMAnLQMA=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpHeads.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8/hkho3zpvIthfOvGSIAqc1FW/U=
+			nW2pRfQARW5YsCNiDiWEz8pTkUo=
 			</data>
 			<key>hash2</key>
 			<data>
-			kDDZiaeRd+LkYWhZiWmg1YCGFLdksIfqPvzmPulkN5w=
+			iEKuC3CCmwGnhvckCVd7VvBIXNoiPhgZ3w55XIYmTjE=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpManager+EW202W.h</key>
@@ -357,11 +361,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y24/lIl85eMzmIE4ilzFLVXn+w4=
+			OQ+z/Yh1e3EmqcSx6zYfDw7WiNg=
 			</data>
 			<key>hash2</key>
 			<data>
-			gCXpwjttxpBXvhe4GmudagFAORQCHjIQxLBgDK9JEwQ=
+			NExvg6jRidy6PnEQYTprm5YO6N/KKJ2nEy6Ik22sR50=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpManager+SA1001.h</key>
@@ -485,6 +489,17 @@
 			DVxmq/s0pwE5gY0iAa9Qr/ymKyxAnGz+/B7XW/P9QuI=
 			</data>
 		</dict>
+		<key>Headers/SLPTCPWiFiInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vZll+6rbUdjUTIrH1UXs6SUArqs=
+			</data>
+			<key>hash2</key>
+			<data>
+			4lb0LaHLBoNTIP5TpGuipz9nae+7mrNNYSpnYqtxzss=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
@@ -522,11 +537,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ss3kVkEq6EZGKOwfQq6X8duDE4g=
+			XoyNeELdMZh7QGb69BIeIKKTyy4=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gf6PfHyOVHculNy2BhJYzrnUNyw/i5SFgxplX5bStRU=
+			LuNMFxR8bIFKk0jG0WkiVw3/iSAP4aYZjxrBHfqo+Sk=
 			</data>
 		</dict>
 		<key>PrivateHeaders/SLPLTcpSendPacket.h</key>

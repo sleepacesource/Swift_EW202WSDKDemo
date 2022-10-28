@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
         self.urlTextfield.text = "http://120.24.68.136:8091";
         self.channelidTextfield.text = "54500"
         self.tokenTextfield.text = "kxu5jh5xmfap"
-        self.deviceIdTextfield.text = "a9p3w87sr4on7";//EW22W20C00888
+        self.deviceIdTextfield.text = "EW22W20C00848";//EW22W20C00888
         
         
     }
@@ -113,6 +113,7 @@ class LoginViewController: UIViewController {
             {
                 print("bind succeed")
                 bindStr = NSLocalizedString("bind_account_success", comment: "")
+                UserDefaults.standard.set(self.deviceIdTextfield.text!, forKey: "deviceID")
             }
             else
             {
