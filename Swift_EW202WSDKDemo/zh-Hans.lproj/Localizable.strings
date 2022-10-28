@@ -401,3 +401,5 @@
 "inbed_time"="在床时间";
 "temperature"="温度";
 "humidity"="湿度";
+"checkWifi"="查询WiFi信号强度";
+"none" = "无";

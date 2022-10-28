@@ -33,8 +33,9 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var clockEndMinTextField: UITextField!
     @IBOutlet weak var clockEndHourTextField: UITextField!
     @IBOutlet weak var saveClock: UIButton!
-
+    let deviceId =   UserDefaults.standard.string(forKey: "deviceID") ?? ""
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -84,7 +85,7 @@ class SettingViewController: UIViewController {
         
         if (sender as! UIButton).isSelected
         {
-            SLPLTcpManager.sharedInstance()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 1, musicID: musicID, deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+            SLPLTcpManager.sharedInstance()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 1, musicID: musicID, deviceInfo: deviceId, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
                 
                 
                 if status == SLPDataTransferStatus.succeed
@@ -100,7 +101,7 @@ class SettingViewController: UIViewController {
         else
         {
             
-            SLPLTcpManager.sharedInstance()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 0, musicID: musicID, deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
+            SLPLTcpManager.sharedInstance()?.ew202wAlarmRreviewOperationVolume(vol, brightness: 100, operation: 0, musicID: musicID, deviceInfo: deviceId, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?)in
                 
                 if status == SLPDataTransferStatus.succeed
                 {
@@ -118,7 +119,7 @@ class SettingViewController: UIViewController {
     @IBAction func saveTime(_ sender: Any) {
         let time  = UInt8(self.timeFormat.text!)!
 
-        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(0, value: time == 12 ? 0 : 1, pincode: "", deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(0, value: time == 12 ? 0 : 1, pincode: "", deviceInfo: deviceId, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
             if status == SLPDataTransferStatus.succeed
             {
                 print("save time format succeed !")
@@ -133,7 +134,7 @@ class SettingViewController: UIViewController {
     @IBAction func syncServerTimeSwitchAction(_ sender: Any) {
         let isOpen = self.syncServerTimeSwitch.isOn ? 1 : 0
         
-        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(1, value: UInt8(isOpen), pincode: "", deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(1, value: UInt8(isOpen), pincode: "", deviceInfo: deviceId, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
             if status == SLPDataTransferStatus.succeed
             {
                 print("save sync server time succeed !")
@@ -157,7 +158,7 @@ class SettingViewController: UIViewController {
 
         let dic = ["sleepFlag":(self.clockSwitch.isOn ? "1" : "0"),"startHour" : self.clockStartHourTextField.text!,"startMin" : self.clockEndHourTextField.text!,"endHour" : self.clockEndHourTextField.text!,"endMin" : self.clockEndMinTextField.text!]
         
-        SLPHTTPManager.sharedInstance().configClockDormancy(withParameters: dic, deviceInfo: "a9p3w87sr4on7", timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
+        SLPHTTPManager.sharedInstance().configClockDormancy(withParameters: dic, deviceInfo: deviceId, timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
             if status == true
             {
                 print("save clock succeed !")
@@ -173,7 +174,7 @@ class SettingViewController: UIViewController {
         
         ///闹钟结构
         let dic = ["num":"1","alarmId" : "0","alarmFlag" : self.alrmRepeatTextField.text!,"smartFlag" : "0","smartOffset" : "0","hour" : self.alarmHourTextField.text!,"min" : self.alarmMinTextField.text!,"week" : self.alrmRepeatTextField.text!,"lazyTimes" : (self.snoozeSwitch.isOn ? "3" : "0"),"lazyTime" : "9","volum" : self.volumeTextField.text!,"lightStrength" : "100","musicId" : self.musicIDTextField.text!,"timeStamp" : String(NSDate().timeIntervalSince1970),"useFlag" : "1"]
-        SLPHTTPManager.sharedInstance().configAlarmInfo(withParameters: dic, deviceInfo: "a9p3w87sr4on7", deviceType: SLPDeviceTypes.EW202W, timeout: 10.0, completion: { (status: Bool, data: Any?, error: String) in
+        SLPHTTPManager.sharedInstance().configAlarmInfo(withParameters: dic, deviceInfo: deviceId, deviceType: SLPDeviceTypes.EW202W, timeout: 10.0, completion: { (status: Bool, data: Any?, error: String) in
             if status == true
             {
                 print("save alarm succeed !")

@@ -35,6 +35,13 @@
  */
 #define kNotificationNameRequestDeviceOnlineStatusChanged @"kNotificationNameRequestDeviceOnlineStatusChanged"
 
+
+/**
+ 设备WiFi信号强度发生改变
+ */
+#define kNotificationNameRequestDeviceWiFiSignalChanged @"kNotificationNameRequestDeviceWiFiSignalChanged"
+
+
 /*
  设备采集状态变化
 */

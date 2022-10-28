@@ -21,6 +21,8 @@ class LightViewController: UIViewController {
     @IBOutlet weak var checkWiFi: UIButton!
     @IBOutlet weak var wifiLabel: UILabel!
     
+    let deviceId =   UserDefaults.standard.string(forKey: "deviceID") ?? ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,6 +52,8 @@ class LightViewController: UIViewController {
         self.wText.text = "1"
         self.brightnessText.text = "50"
         
+        self.checkWiFi.setTitle(NSLocalizedString("checkWifi", comment: ""), for: UIControl.State.normal)
+        self.wifiLabel.text = NSLocalizedString("none", comment: "")
     }
     
     func receiceData() -> Void {
@@ -79,7 +83,7 @@ class LightViewController: UIViewController {
         light.b = b ?? 0
         light.w = w ?? 0
         
-        SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(1, brightness: br, lightMode: 0xff, light: light, deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(1, brightness: br, lightMode: 0xff, light: light, deviceInfo: deviceId, timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {
@@ -107,7 +111,7 @@ class LightViewController: UIViewController {
         light.b = b ?? 0
         light.w = w ?? 0
         
-        SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(2, brightness: br, lightMode: 0xff, light: light, deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(2, brightness: br, lightMode: 0xff, light: light, deviceInfo: deviceId, timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {
@@ -124,7 +128,7 @@ class LightViewController: UIViewController {
     
     @IBAction func closeLight(_ sender: Any) {
         
-        SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(0, brightness: 0, lightMode: 0xff, light:  SLPLight(), deviceInfo: "a9p3w87sr4on7", timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(0, brightness: 0, lightMode: 0xff, light:  SLPLight(), deviceInfo: deviceId, timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {
@@ -138,9 +142,9 @@ class LightViewController: UIViewController {
     }
     
     @IBAction func checkWiFiSignal() {
-         let deviceId =  UserDefaults.standard.string(forKey: "deviceID")!
+         let deviceId =   UserDefaults.standard.string(forKey: "deviceID") ?? ""
         
-         SLPLTcpManager.sharedInstance()?.publicGetWiFiSignal(withDeviceID: deviceId, deviceType: SLPDeviceTypes.TWP3, timeout: 10.0    , callback: {
+         SLPLTcpManager.sharedInstance()?.publicGetWiFiSignal(withDeviceID: deviceId, deviceType: SLPDeviceTypes.EW202W, timeout: 10.0, callback: {
              (status: SLPDataTransferStatus, data: Any?)in
              if status == SLPDataTransferStatus.succeed
              {

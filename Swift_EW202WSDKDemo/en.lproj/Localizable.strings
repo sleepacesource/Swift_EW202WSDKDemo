@@ -398,3 +398,5 @@
 "inbed_time"="In bed time";
 "temperature"="temperature";
 "humidity"="humidity";
+"checkWifi"="Check WiFi signal";
+"none" = "None";

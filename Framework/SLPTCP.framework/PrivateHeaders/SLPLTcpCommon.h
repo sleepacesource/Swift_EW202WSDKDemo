@@ -118,7 +118,11 @@ typedef NS_ENUM(NSInteger,SLPLTCPMessagetUniqTypes) {
     SLPLTCPMessagetUniqType_SA1001_TimeAromaConfig,
     SLPLTCPMessagetUniqType_SA1001_GetOperatingMode,
     SLPLTCPMessagetUniqType_SA1001_PostWorkMode,//sa1001主动发送的工作信息发生改变
-
+    
+    //public
+    SLPLTCPMessagetUniqType_PublicGetDeviceWiFiInfo,//获取WiFi信号强度
+    SLPLTCPMessagetUniqType_PublicPostDeviceWiFiInfo,//报送WiFi信号强度
+    
     SLPlTCPMessagetUniqType_None,
 };
 

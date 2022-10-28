@@ -218,7 +218,7 @@
                         <action selector="checkWiFiSignal" destination="-1" eventType="touchUpInside" id="Jc2-kT-bas"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFr-S4-BVl">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFr-S4-BVl">
                     <rect key="frame" x="204" y="299" width="42" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="e3I-Yn-EnB"/>
