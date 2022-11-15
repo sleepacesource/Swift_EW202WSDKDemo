@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
         self.urlTextfield.text = "http://120.24.68.136:8091";
         self.channelidTextfield.text = "54500"
         self.tokenTextfield.text = "kxu5jh5xmfap"
-        self.deviceIdTextfield.text = "EW22W20C00848";//EW22W20C00888
+        self.deviceIdTextfield.text = "EW22W20C00890";//EW22W20C00890
         
         
     }
