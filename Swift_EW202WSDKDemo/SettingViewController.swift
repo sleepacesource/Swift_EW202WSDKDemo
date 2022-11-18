@@ -171,9 +171,40 @@ class SettingViewController: UIViewController {
     }
     
     @IBAction func saveAlarmAction(_ sender: Any) {
-        
         ///闹钟结构
-        let dic = ["num":"1","alarmId" : "0","alarmFlag" : self.alrmRepeatTextField.text!,"smartFlag" : "0","smartOffset" : "0","hour" : self.alarmHourTextField.text!,"min" : self.alarmMinTextField.text!,"week" : self.alrmRepeatTextField.text!,"lazyTimes" : (self.snoozeSwitch.isOn ? "3" : "0"),"lazyTime" : "9","volum" : self.volumeTextField.text!,"lightStrength" : "100","musicId" : self.musicIDTextField.text!,"timeStamp" : String(NSDate().timeIntervalSince1970),"useFlag" : "1"]
+//        let alarmDic = [
+//            "alarmId" : 0,
+//            "alarmFlag" : 1,
+//            "smartFlag" : 0,
+//            "smartOffset" : 0,
+//            "hour" : 16,
+//            "min" : 0,
+//            "week" : 1,//Moday:0x00000001
+//            "lazyTimes" : 0,
+//            "lazyTime" : 0,
+//            "volum" : 100,
+//            "lightStrength" : 100,
+//            "musicId" : 31143,
+//            "timeStamp" : String(Int(NSDate().timeIntervalSince1970)),
+//            "useFlag" : "1"
+//        ]
+        let dic = [
+            "alarmId" : "0",
+            "alarmFlag" : self.alrmRepeatTextField.text!,
+            "smartFlag" : "0",
+            "smartOffset" : "0",
+            "hour" : self.alarmHourTextField.text!,
+            "min" : self.alarmMinTextField.text!,
+            "week" : self.alrmRepeatTextField.text!,
+            "lazyTimes" : (self.snoozeSwitch.isOn ? "3" : "0"),
+            "lazyTime" : "9",
+            "volum" : self.volumeTextField.text!,
+            "lightStrength" : "100",
+            "musicId" : self.musicIDTextField.text!,
+            "timeStamp" : String(Int(NSDate().timeIntervalSince1970)),
+            "useFlag" : "1"
+        ]
+        
         SLPHTTPManager.sharedInstance().configAlarmInfo(withParameters: dic, deviceInfo: deviceId, deviceType: SLPDeviceTypes.EW202W, timeout: 10.0, completion: { (status: Bool, data: Any?, error: String) in
             if status == true
             {
