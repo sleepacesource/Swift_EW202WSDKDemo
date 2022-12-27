@@ -59,6 +59,9 @@ class LightViewController: UIViewController {
     func receiceData() -> Void {
         //post realtime data
         NotificationCenter.default.addObserver(self, selector: #selector(receive_wifiSignalChanged(notify:)), name: Notification.Name(kNotificationNameRequestDeviceWiFiSignalChanged), object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(receive_online(notify:)), name: Notification.Name(kNotificationNameRequestDeviceOnlineStatusChanged), object: nil)
+        
     }
     
     @objc func receive_wifiSignalChanged(notify: NSNotification) -> Void {
@@ -67,8 +70,13 @@ class LightViewController: UIViewController {
         
         let wifi: SLPTCPWiFiInfo = notify.userInfo?[kNotificationPostData] as! SLPTCPWiFiInfo
         self.wifiLabel.text = String(wifi.signalStrength)
-        
     }
+    
+    @objc func receive_online(notify: NSNotification) -> Void {
+        let deviceOnline: SLPTCPOnlineStatus = notify.userInfo?[kNotificationPostData] as! SLPTCPOnlineStatus
+        print("deviceid and online status --->",deviceOnline.deviceID,deviceOnline.onlineStatus)
+    }
+    
     
     @IBAction func changeColor(_ sender: Any) {
         let r  = UInt8(self.rText.text!)
