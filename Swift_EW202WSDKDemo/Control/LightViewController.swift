@@ -74,7 +74,7 @@ class LightViewController: UIViewController {
     
     @objc func receive_online(notify: NSNotification) -> Void {
         let deviceOnline: SLPTCPOnlineStatus = notify.userInfo?[kNotificationPostData] as! SLPTCPOnlineStatus
-        print("deviceid and online status --->",deviceOnline.deviceID,deviceOnline.onlineStatus)
+        print("deviceid and online status --->",deviceOnline.deviceID,deviceOnline.isOnline)
     }
     
     
@@ -135,9 +135,8 @@ class LightViewController: UIViewController {
     
     
     @IBAction func closeLight(_ sender: Any) {
-        
         SLPLTcpManager.sharedInstance()?.ew202wLightControlOperation(0, brightness: 0, lightMode: 0xff, light:  SLPLight(), deviceInfo: deviceId, timeout: 10.0, callback: {(status: SLPDataTransferStatus, data: Any?) in
-            
+
             if status == SLPDataTransferStatus.succeed
             {
                 print("close succeed !")
