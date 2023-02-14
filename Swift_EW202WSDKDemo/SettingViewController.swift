@@ -134,18 +134,16 @@ class SettingViewController: UIViewController {
     @IBAction func syncServerTimeSwitchAction(_ sender: Any) {
         let isOpen = self.syncServerTimeSwitch.isOn ? 1 : 0
         
-//        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(1, value: UInt8(isOpen), pincode: "", deviceInfo: deviceId, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
-//            if status == SLPDataTransferStatus.succeed
-//            {
-//                print("save sync server time succeed !")
-//            }
-//            else
-//            {
-//                print("save sync server time failed !")
-//            }
-//        })
-        
-        self.handSycnTime();
+        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(1, value: UInt8(isOpen), pincode: "", deviceInfo: deviceId, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+            if status == SLPDataTransferStatus.succeed
+            {
+                print("save sync server time succeed !")
+            }
+            else
+            {
+                print("save sync server time failed !")
+            }
+        })
     }
     
     @IBAction func saveClock(_ sender: Any) {
@@ -176,7 +174,7 @@ class SettingViewController: UIViewController {
     func handSycnTime() {
     
         print("timezone-->\(NSTimeZone.system)")
-        SLPLTcpManager.sharedInstance()?.ew202wSyncTime(byTimestamp:1676339500, timeZone: 28800, season: 0, timeMode: 12, deviceInfo: deviceId, timeout: 10, callback: { (status: SLPDataTransferStatus, data: Any?) in
+        SLPLTcpManager.sharedInstance()?.ew202wSyncTime(byTimestamp:1676339500, timeZone: 28800, season: 0, deviceInfo: deviceId, timeout: 10, callback: { (status: SLPDataTransferStatus, data: Any?) in
             
             if status == SLPDataTransferStatus.succeed
             {

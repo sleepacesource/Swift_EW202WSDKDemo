@@ -24,10 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
   @param timestamp :时间戳 单位：秒 时间戳，无符号整形
   @param timezone :时区偏移 时区偏移信息，单位：秒
   @param season :特殊时令 0:无,1:夏令时,2:冬令时
-  @param timeMode :时间制式  12：12小时制 24：24小时制
   @param deviceID  设备ID
  */
-- (void)ew202wSyncTimeByTimestamp:(UInt32)timestamp timeZone:(int32_t)timezone season:(UInt8)season timeMode:(UInt8)timeMode deviceInfo:(NSString *)deviceID
+- (void)ew202wSyncTimeByTimestamp:(UInt32)timestamp timeZone:(int32_t)timezone season:(UInt8)season deviceInfo:(NSString *)deviceID
     timeout:(CGFloat)timeout callback:(SLPTransforCallback)handle;
 
 /**
