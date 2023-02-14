@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		BAjCfce28nmiYwewDHK+CYOfhLE=
-		</data>
 		<key>Headers/EW202WAidInfo.h</key>
 		<data>
 		79++78LRfBOankPqQG3ACAKeWxc=
@@ -78,7 +74,7 @@
 		</data>
 		<key>Headers/SLPLTcpManager+EW202W.h</key>
 		<data>
-		8AwOnHIlW69NJ11Tu2a52lEhi1Q=
+		Z+q2tzcf58BQJyl3kGcDPshMOKA=
 		</data>
 		<key>Headers/SLPLTcpManager+Public.h</key>
 		<data>
@@ -106,7 +102,7 @@
 		</data>
 		<key>Headers/SLPTCP.h</key>
 		<data>
-		gzFqLUj05fXB8GLyFh15H+pOWlY=
+		eogQXbrBZiIL9ANtun30dC4KojE=
 		</data>
 		<key>Headers/SLPTCPBaseEntity.h</key>
 		<data>
@@ -134,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r8nNp+bqlqP5tFDzSPxTIyzZAdc=
+		bPHh1FmzE5kFFccgTr/U4Jbb/+E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -354,11 +350,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8AwOnHIlW69NJ11Tu2a52lEhi1Q=
+			Z+q2tzcf58BQJyl3kGcDPshMOKA=
 			</data>
 			<key>hash2</key>
 			<data>
-			Pyi33XtXduR6qkwZJyGBZpF8Ag+NCNNE2Qsa1xNsnro=
+			XPEnMXkdK+d0l1HCfRm3UODPaC/nyOGaD/WrfqGXIyA=
 			</data>
 		</dict>
 		<key>Headers/SLPLTcpManager+Public.h</key>
@@ -431,11 +427,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gzFqLUj05fXB8GLyFh15H+pOWlY=
+			eogQXbrBZiIL9ANtun30dC4KojE=
 			</data>
 			<key>hash2</key>
 			<data>
-			o1rVjRv3TYyvCQrIGzoc0Mv5QtNe04keAhPKm+clc54=
+			mnQ6pP1qq3cGr3scW7E5dysEC+yJu4ZTdX1K7nDW2aU=
 			</data>
 		</dict>
 		<key>Headers/SLPTCPBaseEntity.h</key>

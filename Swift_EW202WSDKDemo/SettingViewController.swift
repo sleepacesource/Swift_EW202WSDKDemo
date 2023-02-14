@@ -24,9 +24,9 @@ class SettingViewController: UIViewController {
     
     @IBOutlet weak var timeFormat: UITextField!
     @IBOutlet weak var saveTimeFormat: UIButton!
-
+    
     @IBOutlet weak var syncServerTimeSwitch: UISwitch!
-
+    
     @IBOutlet weak var clockSwitch: UISwitch!
     @IBOutlet weak var clockStartMinTextField: UITextField!
     @IBOutlet weak var clockStartHourTextField: UITextField!
@@ -35,7 +35,7 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var saveClock: UIButton!
     let deviceId =   UserDefaults.standard.string(forKey: "deviceID") ?? ""
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -118,7 +118,7 @@ class SettingViewController: UIViewController {
     
     @IBAction func saveTime(_ sender: Any) {
         let time  = UInt8(self.timeFormat.text!)!
-
+        
         SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(0, value: time == 12 ? 0 : 1, pincode: "", deviceInfo: deviceId, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
             if status == SLPDataTransferStatus.succeed
             {
@@ -134,16 +134,18 @@ class SettingViewController: UIViewController {
     @IBAction func syncServerTimeSwitchAction(_ sender: Any) {
         let isOpen = self.syncServerTimeSwitch.isOn ? 1 : 0
         
-        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(1, value: UInt8(isOpen), pincode: "", deviceInfo: deviceId, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
-            if status == SLPDataTransferStatus.succeed
-            {
-                print("save sync server time succeed !")
-            }
-            else
-            {
-                print("save sync server time failed !")
-            }
-        })
+//        SLPLTcpManager.sharedInstance()?.ew202wConfigSystem(1, value: UInt8(isOpen), pincode: "", deviceInfo: deviceId, timeout: 10.0, callback: { (status: SLPDataTransferStatus, data: Any?) in
+//            if status == SLPDataTransferStatus.succeed
+//            {
+//                print("save sync server time succeed !")
+//            }
+//            else
+//            {
+//                print("save sync server time failed !")
+//            }
+//        })
+        
+        self.handSycnTime();
     }
     
     @IBAction func saveClock(_ sender: Any) {
@@ -155,7 +157,7 @@ class SettingViewController: UIViewController {
         clock.startMin = UInt8(self.clockStartMinTextField.text!)!
         clock.endHour = UInt8(self.clockEndHourTextField.text!)!
         clock.endMin = UInt8(self.clockEndMinTextField.text!)!
-
+        
         let dic = ["sleepFlag":(self.clockSwitch.isOn ? "1" : "0"),"startHour" : self.clockStartHourTextField.text!,"startMin" : self.clockEndHourTextField.text!,"endHour" : self.clockEndHourTextField.text!,"endMin" : self.clockEndMinTextField.text!]
         
         SLPHTTPManager.sharedInstance().configClockDormancy(withParameters: dic, deviceInfo: deviceId, timeOut: 10.0, completion: { (status: Bool, data: Any?, error: String) in
@@ -170,24 +172,41 @@ class SettingViewController: UIViewController {
         })
     }
     
+    
+    func handSycnTime() {
+    
+        print("timezone-->\(NSTimeZone.system)")
+        SLPLTcpManager.sharedInstance()?.ew202wSyncTime(byTimestamp:1676339500, timeZone: 28800, season: 0, timeMode: 12, deviceInfo: deviceId, timeout: 10, callback: { (status: SLPDataTransferStatus, data: Any?) in
+            
+            if status == SLPDataTransferStatus.succeed
+            {
+                print("ew202wSyncTime succeed !")
+            }
+            else
+            {
+                print("ew202wSyncTime failed !")
+            }
+        })
+    }
+    
     @IBAction func saveAlarmAction(_ sender: Any) {
         ///闹钟结构
-//        let alarmDic = [
-//            "alarmId" : 0,
-//            "alarmFlag" : 1,
-//            "smartFlag" : 0,
-//            "smartOffset" : 0,
-//            "hour" : 16,
-//            "min" : 0,
-//            "week" : 1,//Moday:0x00000001
-//            "lazyTimes" : 0,
-//            "lazyTime" : 0,
-//            "volum" : 100,
-//            "lightStrength" : 100,
-//            "musicId" : 31143,
-//            "timeStamp" : String(Int(NSDate().timeIntervalSince1970)),
-//            "useFlag" : "1"
-//        ]
+        //        let alarmDic = [
+        //            "alarmId" : 0,
+        //            "alarmFlag" : 1,
+        //            "smartFlag" : 0,
+        //            "smartOffset" : 0,
+        //            "hour" : 16,
+        //            "min" : 0,
+        //            "week" : 1,//Moday:0x00000001
+        //            "lazyTimes" : 0,
+        //            "lazyTime" : 0,
+        //            "volum" : 100,
+        //            "lightStrength" : 100,
+        //            "musicId" : 31143,
+        //            "timeStamp" : String(Int(NSDate().timeIntervalSince1970)),
+        //            "useFlag" : "1"
+        //        ]
         let dic = [
             "alarmId" : "0",
             "alarmFlag" : self.alrmRepeatTextField.text!,

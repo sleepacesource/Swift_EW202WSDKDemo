@@ -15,4 +15,4 @@
 #import "SLPLTcpDef.h"
 #import "SLPLTcpHeads.h"
 
-#define kTCPVersion @"1.0.23"
+#define kTCPVersion @"1.0.24"
